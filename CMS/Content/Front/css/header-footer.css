@@ -1,0 +1,1188 @@
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'agency-fb';
+    src: url('../fonts/agency-fb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl-500';
+    src: url('../fonts/MuseoSansCyrl-500.otf') format('opentype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(249, 249, 249);
+}
+
+header {
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+    /*Giao diện menu trên máy tính*/
+    header > .desktop {
+        height: 1%;
+        padding: 0em 5em;
+    }
+
+        /*Logo*/
+        header > .desktop > img {
+            width: 7em;
+            padding: 0.7em 0em 0em 0em;
+            margin: 0em 14em 0em 0em;
+        }
+
+        /*Menu*/
+        header > .desktop > ul {
+            list-style: none;
+            text-align: right;
+            margin: 0;
+        }
+
+            header > .desktop > ul > li {
+                float: right;
+                font-family: Roboto-Light;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                margin: 2.2em 0em 0.5em 0em;
+            }
+
+                header > .desktop > ul > li > a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    padding: 1em 1em 0.7em 1em;
+                    transition: all .2s;
+                }
+
+                    header > .desktop > ul > li > a:hover {
+                        background: rgb(255, 255, 255);
+                        color: rgb(51, 36, 30);
+                    }
+
+                /*Menu con*/
+                header > .desktop > ul > li > ul {
+                    display: none;
+                    list-style: none;
+                    position: absolute;
+                    z-index: 4;
+                    width: 35em;
+                    left: 0;
+                    padding: 2em;
+                    margin-top: 0.55em;
+                    background: rgb(255, 255, 255);
+                    transition: all .5s ease-out;
+                }
+
+                header > .desktop > ul > li:hover > ul {
+                    display: block;
+                }
+
+                header > .desktop > ul > li > ul > li {
+                    float: left;
+                    width: 10em;
+                    text-align: center;
+                }
+
+                    header > .desktop > ul > li > ul > li > a {
+                        text-decoration: none;
+                        font-family: Roboto-Bold;
+                        color: rgb(51, 36, 30);
+                    }
+
+                        header > .desktop > ul > li > ul > li > a:hover {
+                            color: none;
+                        }
+
+                        header > .desktop > ul > li > ul > li > a > img {
+                            margin: 0.5em 0em 0em 0em;
+                        }
+
+        /*Nút tìm kiếm*/
+        header > .desktop > a {
+            border-right: 2px solid rgb(255, 255, 255);
+            border-left: 2px solid rgb(255, 255, 255);
+            width: 2.5em;
+            padding: 0;
+            margin: 3.5em 0em 0em 0em;
+            text-align: center;
+        }
+
+            header > .desktop > a > img {
+                margin: 0em 0.3em;
+                width: 1.5em;
+            }
+
+footer {
+    background: rgb(49, 49, 49);
+    height: 1%;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    padding: 3em 3em;
+}
+
+    /*Menu và các mạng xã hội*/
+    footer > .menu-social {
+        height: 1%;
+        overflow: hidden;
+    }
+
+        /*Menu*/
+        footer > .menu-social > .menu {
+            float: left;
+        }
+
+            footer > .menu-social > .menu > ul {
+                float: left;
+                list-style: none;
+            }
+
+                footer > .menu-social > .menu > ul > li {
+                    text-indent: 1em;
+                    line-height: 1.8em;
+                }
+
+                footer > .menu-social > .menu > ul > .title {
+                    list-style: none;
+                    font-family: Roboto-Black;
+                    font-size: 1.5em;
+                    text-indent: 0;
+                }
+
+                footer > .menu-social > .menu > ul > li > a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                }
+
+        /*Mạng xá hội*/
+        footer > .menu-social > .social {
+            float: left;
+        }
+
+            /*Biểu tượng mạng xã hội*/
+            footer > .menu-social > .social > .icon {
+                margin: 0em 0em 1em 0em;
+            }
+
+                footer > .menu-social > .social > .icon > a {
+                    margin: 0em 0.4em 0em 0.4em;
+                }
+
+            /*Ô tìm kiếm*/
+            footer > .menu-social > .social > .search {
+            }
+
+                footer > .menu-social > .social > .search > input {
+                    background: rgb(49, 49, 49);
+                    font-style: italic;
+                    width: 16em;
+                    height: 2.5em;
+                }
+
+                footer > .menu-social > .social > .search > a {
+                    margin-left: -2.5em;
+                }
+
+    /*Thông tin công ty và liên hệ*/
+    footer > .contact {
+        margin: 3em 0em;
+    }
+
+        /*Bản đồ*/
+        footer > .contact > .map {
+            padding: 0;
+        }
+
+            footer > .contact > .map > iframe {
+                width: 56.5em;
+                height: 28em;
+                margin: 0em 0em 0em 2em;
+            }
+
+        /*Thông tin*/
+        footer > .contact > .info {
+            padding: 1.5em 0em 0em 0em;
+        }
+
+            footer > .contact > .info > p {
+                text-align: center;
+                font-family: Roboto-Black;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                margin: 0em 0em 1.5em 0em;
+            }
+
+            footer > .contact > .info > ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                footer > .contact > .info > ul > li {
+                    margin: 1em 0em;
+                }
+
+                    footer > .contact > .info > ul > li > img {
+                        width: 1.5em;
+                        margin: -0.6em 0.8em 0em 3.5em;
+                    }
+
+                    footer > .contact > .info > ul > li > span {
+                        font-weight: bold;
+                    }
+
+            /*Phần nhập thông tin liên hệ*/
+            footer > .contact > .info > div {
+                margin: 3em 0em 0em 0em;
+                height: 1%;
+                overflow: hidden;
+            }
+
+                footer > .contact > .info > div > div {
+                    padding: 0em 0.5em 0em 1.8em;
+                }
+
+                    footer > .contact > .info > div > div > input {
+                        color: rgb(51, 36, 30);
+                        margin: 0em 0em 0.8em 0em;
+                        width: 100%;
+                        height: 2em;
+                        font-style: italic;
+                    }
+
+                    footer > .contact > .info > div > div > button {
+                        color: rgb(51, 36, 30);
+                        width: 100%;
+                        height: 2em;
+                        font-size: 1em;
+                        font-family: Roboto-Bold;
+                    }
+
+                footer > .contact > .info > div > textarea {
+                    color: rgb(51, 36, 30);
+                    height: 10.4em;
+                    font-style: italic;
+                }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+
+    /*Menu con*/
+    header > .desktop > ul > li > ul {
+        left: 2em;
+    }
+
+    /*Bản đồ*/
+    footer > .contact > .map > iframe {
+        width: 59.5em;
+    }
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    /*Menu*/
+    header > .desktop > ul {
+        padding: 0;
+        margin: -2em 0em 0em 10em;
+        width: 50.5em;
+    }
+
+        header > .desktop > ul > li {
+            margin: 0;
+        }
+
+            header > .desktop > ul > li > a {
+                font-family: Roboto-Bold;
+            }
+
+                header > .desktop > ul > li > a:hover {
+                    background: none;
+                }
+
+            header > .desktop > ul > li:hover > ul {
+                display: none;
+            }
+
+    /*Nút tìm kiếm*/
+    header > .desktop > a {
+        margin: -2em 0em 0em 60em;
+    }
+
+    footer {
+        padding: 4em 2em 2em 2em;
+    }
+
+        /*Menu và các mạng xã hội*/
+        footer > .menu-social {
+            display: none;
+        }
+
+        /*Thông tin công ty và liên hệ*/
+        footer > .contact {
+            margin: 0;
+        }
+
+            /*Bản đồ*/
+            footer > .contact > .map {
+                display: none;
+            }
+
+            /*Thông tin*/
+            footer > .contact > .info {
+                width: 100%;
+                padding: 0;
+                background: url(../images/header-footer/logo-co.png) no-repeat;
+                background-size: 25%;
+                background-position-x: 3em;
+                background-position-y: 2em;
+            }
+
+                footer > .contact > .info > p {
+                    font-size: 2.5em;
+                    margin: 0;
+                    width: 55%;
+                    float: right;
+                }
+
+                footer > .contact > .info > ul {
+                    font-size: 1.5em;
+                    width: 55%;
+                    float: right;
+                }
+
+                    footer > .contact > .info > ul > li > img {
+                        margin: -0.6em 1em 0em 1em;
+                    }
+
+                /*Phần nhập thông tin liên hệ*/
+                footer > .contact > .info > div {
+                    display: none;
+                }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .fixed {
+        height: 80px;
+    }
+
+    header {
+        position: static;
+    }
+
+    .dl-menuwrapper {
+        width: 100%;
+        height: 80px;
+        float: left;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 50% 200%;
+        perspective-origin: 50% 200%;
+        box-shadow: 0 3px 3px rgba(132,136,138,.1);
+        background: rgb(51, 36, 30);
+        z-index: 2;
+    }
+
+        .dl-menuwrapper:first-child {
+            margin-right: 0;
+        }
+
+        .dl-menuwrapper div {
+            width: 84%;
+            float: right;
+        }
+
+            .dl-menuwrapper div .logo {
+                width: 80%;
+                display: block;
+                text-align: center;
+            }
+
+                .dl-menuwrapper div .logo img {
+                    width: 7.5em;
+                    padding: 0.15em 0em 0em 0em;
+                }
+
+            .dl-menuwrapper div .search {
+                background: url(../images/header-footer/search-icon.png) no-repeat;
+                width: 5%;
+                height: 100%;
+                position: absolute;
+                color: transparent;
+                right: 1em;
+                top: 0em;
+                margin: 0;
+                background-position-y: 1.7em;
+                background-size: 80%;
+            }
+
+                .dl-menuwrapper div .search:before {
+                    border-left: 1px solid #dadada;
+                    content: "";
+                    height: 70%;
+                    position: absolute;
+                    top: 15%;
+                    left: -1em;
+                    width: 0;
+                }
+
+        .dl-menuwrapper button {
+            background: rgb(51, 36, 30);
+            border: none;
+            width: 10%;
+            height: 70%;
+            text-indent: -900em;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            border-right: 1px solid rgb(218, 218, 218);
+            top: 20%;
+        }
+
+            .dl-menuwrapper button:hover,
+            .dl-menuwrapper button.dl-active,
+            .dl-menuwrapper ul {
+                background: rgb(51, 36, 30);
+            }
+
+            .dl-menuwrapper button:after {
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 10%;
+                background: rgb(255, 255, 255);
+                top: 16%;
+                left: 15%;
+                box-shadow: 0 15px 0 rgb(255, 255, 255), 0 30px 0 rgb(255, 255, 255);
+            }
+
+        .dl-menuwrapper ul {
+            padding: 0;
+            list-style: none;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            background: rgb(51, 36, 30);
+        }
+
+        .dl-menuwrapper li {
+            position: relative;
+        }
+
+            .dl-menuwrapper li a {
+                display: block;
+                position: relative;
+                padding: 1em 1.5em;
+                font-size: 2em;
+                line-height: 20px;
+                font-weight: 300;
+                color: #fff;
+                outline: none;
+                text-decoration: none;
+            }
+
+            .dl-menuwrapper li.dl-back > a {
+                padding-left: 50px;
+                background: rgba(0,0,0,0.1);
+            }
+
+            .dl-menuwrapper li.dl-back:after,
+            .dl-menuwrapper li > a:not(:only-child):after {
+                position: absolute;
+                top: 0;
+                line-height: 50px;
+                font-family: 'icomoon';
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                content: "\e000";
+            }
+
+            .dl-menuwrapper li.dl-back:after {
+                left: 15px;
+                color: rgba(212,204,198,0.3);
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+                font-size: 1.5em;
+                margin: 0.5em 0em 0em 0em;
+            }
+
+            .dl-menuwrapper li > a:after {
+                right: 10px;
+                color: rgba(255,255, 255, .3);
+                margin: 0.5em 0em 0em 0em;
+            }
+
+        .dl-menuwrapper .dl-menu {
+            margin: 1.6em 0 0 0;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+            .dl-menuwrapper .dl-menu.dl-menu-toggle {
+                transition: all 0.3s ease;
+            }
+
+            .dl-menuwrapper .dl-menu.dl-menuopen {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+        /* Hide the inner submenus */
+        .dl-menuwrapper li .dl-submenu {
+            display: none;
+        }
+
+    /* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+    .dl-menu.dl-subview li,
+    .dl-menu.dl-subview li.dl-subviewopen > a,
+    .dl-menu.dl-subview li.dl-subview > a {
+        display: none;
+    }
+
+        .dl-menu.dl-subview li.dl-subview,
+        .dl-menu.dl-subview li.dl-subview .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+            display: block;
+        }
+
+    /* Dynamically added submenu outside of the menu context */
+    .dl-menuwrapper > .dl-submenu {
+        position: absolute;
+        width: 100%;
+        top: 78px;
+        left: 0;
+        margin: 0;
+    }
+
+    /* Animation classes for moving out and in */
+
+    .dl-menu.dl-animate-out-5 {
+        -webkit-animation: MenuAnimOut5 0.4s ease;
+        animation: MenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    .dl-menu.dl-animate-in-5 {
+        -webkit-animation: MenuAnimIn5 0.4s ease;
+        animation: MenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
+        -webkit-animation: SubMenuAnimIn5 0.4s ease;
+        animation: SubMenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
+        -webkit-animation: SubMenuAnimOut5 0.4s ease;
+        animation: SubMenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+    /* No JS Fallback */
+    .no-js .dl-menuwrapper .dl-menu {
+        position: relative;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .no-js .dl-menuwrapper li .dl-submenu {
+        display: block;
+    }
+
+    .no-js .dl-menuwrapper li.dl-back {
+        display: none;
+    }
+
+    .no-js .dl-menuwrapper li > a:not(:only-child) {
+        background: rgba(0,0,0,0.1);
+    }
+
+        .no-js .dl-menuwrapper li > a:not(:only-child):after {
+            content: '';
+        }
+
+    /*Phần footer*/
+    footer {
+        padding: 1em 0.5em 0em 0.5em;
+    }
+        /*Menu và các mạng xã hội*/
+        footer > .menu-social {
+            display: none;
+        }
+
+        /*Phần thông tin liên hệ*/
+        footer > .contact {
+            margin: 0;
+        }
+
+            /*Bản đồ*/
+            footer > .contact > .map {
+                display: none;
+            }
+
+            /*Thông tin*/
+            footer > .contact > .info {
+                padding: 0;
+            }
+
+                footer > .contact > .info > p {
+                    margin: 0;
+                    font-size: 3em;
+                }
+
+                footer > .contact > .info > ul {
+                    text-align: center;
+                    font-size: 2em;
+                }
+
+                    footer > .contact > .info > ul > li > img {
+                        display: none;
+                    }
+
+                /*Phần nhập thông tin liên hệ*/
+                footer > .contact > .info > div {
+                    display: none;
+                }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .fixed {
+        height: 50px;
+    }
+
+    header {
+        position: static;
+    }
+
+    .dl-menuwrapper {
+        width: 100%;
+        height: 50px;
+        float: left;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 50% 200%;
+        perspective-origin: 50% 200%;
+        box-shadow: 0 3px 3px rgba(132,136,138,.1);
+        background: rgb(51, 36, 30);
+        z-index: 2;
+    }
+
+        .dl-menuwrapper:first-child {
+            margin-right: 0;
+        }
+
+        .dl-menuwrapper div {
+            width: 84%;
+            float: right;
+        }
+
+            .dl-menuwrapper div .logo {
+                width: 80%;
+                display: block;
+                text-align: center;
+            }
+
+                .dl-menuwrapper div .logo img {
+                    width: 4.8em;
+                    padding: 0.15em 0em 0em 0em;
+                }
+
+            .dl-menuwrapper div .search {
+                background: url(../images/header-footer/search-icon.png) no-repeat;
+                width: 1.8em;
+                height: 100%;
+                position: absolute;
+                color: transparent;
+                right: 1em;
+                top: 0em;
+                margin: 0;
+                background-position-y: 1em;
+            }
+
+                .dl-menuwrapper div .search:before {
+                    border-left: 1px solid #dadada;
+                    content: "";
+                    height: 70%;
+                    position: absolute;
+                    top: 15%;
+                    left: -1em;
+                    width: 0;
+                }
+
+        .dl-menuwrapper button {
+            background: rgb(51, 36, 30);
+            border: none;
+            width: 16%;
+            height: 70%;
+            text-indent: -900em;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            border-right: 1px solid rgb(218, 218, 218);
+            top: 15%;
+        }
+
+            .dl-menuwrapper button:hover,
+            .dl-menuwrapper button.dl-active,
+            .dl-menuwrapper ul {
+                background: rgb(51, 36, 30);
+            }
+
+            .dl-menuwrapper button:after {
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 10%;
+                background: rgb(255, 255, 255);
+                top: 15%;
+                left: 15%;
+                box-shadow: 0 10px 0 rgb(255, 255, 255), 0 20px 0 rgb(255, 255, 255);
+            }
+
+        .dl-menuwrapper ul {
+            padding: 0;
+            list-style: none;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            background: rgb(51, 36, 30);
+        }
+
+        .dl-menuwrapper li {
+            position: relative;
+        }
+
+            .dl-menuwrapper li a {
+                display: block;
+                position: relative;
+                padding: 15px 20px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #fff;
+                outline: none;
+                text-decoration: none;
+            }
+
+            .dl-menuwrapper li.dl-back > a {
+                padding-left: 30px;
+                background: rgba(0,0,0,0.1);
+            }
+
+            .dl-menuwrapper li.dl-back:after,
+            .dl-menuwrapper li > a:not(:only-child):after {
+                position: absolute;
+                top: 0;
+                line-height: 50px;
+                font-family: 'icomoon';
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                content: "\e000";
+            }
+
+            .dl-menuwrapper li.dl-back:after {
+                left: 10px;
+                color: rgba(212,204,198,0.3);
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            .dl-menuwrapper li > a:after {
+                right: 10px;
+                color: rgba(255,255, 255, .3);
+            }
+
+        .dl-menuwrapper .dl-menu {
+            margin: 1.1em 0 0 0;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+            .dl-menuwrapper .dl-menu.dl-menu-toggle {
+                transition: all 0.3s ease;
+            }
+
+            .dl-menuwrapper .dl-menu.dl-menuopen {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+        /* Hide the inner submenus */
+        .dl-menuwrapper li .dl-submenu {
+            display: none;
+        }
+
+    /* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+    .dl-menu.dl-subview li,
+    .dl-menu.dl-subview li.dl-subviewopen > a,
+    .dl-menu.dl-subview li.dl-subview > a {
+        display: none;
+    }
+
+        .dl-menu.dl-subview li.dl-subview,
+        .dl-menu.dl-subview li.dl-subview .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+            display: block;
+        }
+
+    /* Dynamically added submenu outside of the menu context */
+    .dl-menuwrapper > .dl-submenu {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        margin: 0;
+    }
+
+    /* Animation classes for moving out and in */
+
+    .dl-menu.dl-animate-out-5 {
+        -webkit-animation: MenuAnimOut5 0.4s ease;
+        animation: MenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    .dl-menu.dl-animate-in-5 {
+        -webkit-animation: MenuAnimIn5 0.4s ease;
+        animation: MenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
+        -webkit-animation: SubMenuAnimIn5 0.4s ease;
+        animation: SubMenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
+        -webkit-animation: SubMenuAnimOut5 0.4s ease;
+        animation: SubMenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+    /* No JS Fallback */
+    .no-js .dl-menuwrapper .dl-menu {
+        position: relative;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .no-js .dl-menuwrapper li .dl-submenu {
+        display: block;
+    }
+
+    .no-js .dl-menuwrapper li.dl-back {
+        display: none;
+    }
+
+    .no-js .dl-menuwrapper li > a:not(:only-child) {
+        background: rgba(0,0,0,0.1);
+    }
+
+        .no-js .dl-menuwrapper li > a:not(:only-child):after {
+            content: '';
+        }
+
+    /*Phần footer*/
+    footer {
+        padding: 1em 0.5em 0em 0.5em;
+    }
+        /*Menu và các mạng xã hội*/
+        footer > .menu-social {
+            display: none;
+        }
+
+        /*Phần thông tin liên hệ*/
+        footer > .contact {
+            margin: 0;
+        }
+
+            /*Bản đồ*/
+            footer > .contact > .map {
+                display: none;
+            }
+
+            /*Thông tin*/
+            footer > .contact > .info {
+                padding: 0;
+            }
+
+                footer > .contact > .info > p {
+                    margin: 0;
+                }
+
+                footer > .contact > .info > ul {
+                    text-align: center;
+                }
+
+                    footer > .contact > .info > ul > li > img {
+                        display: none;
+                    }
+
+                /*Phần nhập thông tin liên hệ*/
+                footer > .contact > .info > div {
+                    display: none;
+                }
+}

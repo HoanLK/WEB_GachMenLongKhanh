@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 left">
+    @Html.Partial("_MenuLeft")
+    @Html.Partial("_TinTucAll")
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 lienHe" ng-controller="ContactController">
+    <p class="tieuDe">LIÊN HỆ</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.7050939457754!2d106.62351071443251!3d20.803215386120996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a772da16319eb%3A0xffe3563086822770!2zTmfDoyA1IEtp4bq_biBBbiwgS2nhur9uIEFuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1475723697816" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thongTin">
+        <div class="form-group" ng-class="{'has-error':!Contact.hoten, 'has-success':Contact.hoten}">
+            <input type="text" class="form-control" id="name" placeholder="Họ tên (bắt buộc)" ng-model="Contact.hoten">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="diachi" placeholder="Địa chỉ" ng-model="Contact.diachi">
+        </div>
+        <div class="form-group" ng-class="{'has-error':!Contact.sdt, 'has-success':Contact.sdt}" style="padding-left:0;">
+            <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại (bắt buộc)" ng-model="Contact.sdt">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Email" ng-model="Contact.email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="tieude" placeholder="Tiêu đề liên hệ" ng-model="Contact.title">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="10" id="noidung" placeholder="Nội dung liên hệ" ng-model="Contact.content"></textarea>
+        </div>
+        <button type="button" class="gui" ng-click="SaveContact()">Gửi</button>
+    </div>
+</div>
+
+<!--Gợi ý thêm sản phẩm-->
+@Html.Partial("_SanPham")

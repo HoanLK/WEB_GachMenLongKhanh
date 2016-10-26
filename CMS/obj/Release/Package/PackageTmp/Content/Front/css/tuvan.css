@@ -1,0 +1,454 @@
+﻿.tuvan {
+    padding: 0;
+}
+
+    /*Banner*/
+    .tuvan > .banner {
+        padding: 0;
+        margin: 0 0 5em 0;
+    }
+
+        .tuvan > .banner > img {
+            padding: 0;
+        }
+
+        .tuvan > .banner > p {
+            font-family: Roboto-Light;
+            font-size: 1.5em;
+            text-align: center;
+            color: rgb(100, 100, 100);
+            width: 70%;
+            left: 15%;
+            border-top: solid 1px rgb(100, 100, 100);
+            border-bottom: solid 1px rgb(100, 100, 100);
+            padding: 0.3em 7em;
+            margin: 0.5em 0;
+        }
+
+    /*Nội dung*/
+    .tuvan > .noidung {
+        padding: 0;
+        width: 100%;
+    }
+
+        /*Các bài viết và dòng số trang*/
+        .tuvan > .noidung > .cacbaiviet {
+        }
+
+            /*Khung chứa các bài viết*/
+            .tuvan > .noidung > .cacbaiviet > div {
+            }
+
+                /*Bài viết*/
+                .tuvan > .noidung > .cacbaiviet > div > .baiviet {
+                    margin: 0 0 5em 0;
+                }
+
+                    .tuvan > .noidung > .cacbaiviet > div > .baiviet > img {
+                    }
+
+                    .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text {
+                        padding: 3em 1em;
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tieude {
+                            font-family: Roboto-Regular;
+                            font-size: 1.8em;
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding: 0;
+                        }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tomtat {
+                            font-family: Roboto-Light;
+                            font-size: 1.5em;
+                            text-align: justify;
+                            padding: 0;
+                            margin: 0 0 1.5em 0;
+                        }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a {
+                            font-family: Roboto-Medium;
+                            font-size: 1.5em;
+                            color: rgb(100, 100, 100);
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            border-top: solid 1px rgb(100, 100, 100);
+                            border-bottom: solid 1px rgb(100, 100, 100);
+                            padding: 0.3em 1em;
+                            transition: all .3s;
+                        }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a:hover {
+                                color: rgb(0, 0, 0);
+                            }
+
+            /*Số trang*/
+            .tuvan > .noidung > .cacbaiviet > .num-page {
+                padding: 0 40%;
+            }
+
+                .tuvan > .noidung > .cacbaiviet > .num-page > ul {
+                }
+
+                    .tuvan > .noidung > .cacbaiviet > .num-page > ul > li {
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > .num-page > ul > li > a {
+                        }
+
+        /*Bài viết liên quan*/
+
+        .tuvan > .noidung > .baivietlienquan {
+            padding: 0 1em;
+            margin: 3em 0;
+        }
+
+            .tuvan > .noidung > .baivietlienquan > p {
+                font-family: Roboto-Regular;
+                font-size: 2em;
+                text-transform: uppercase;
+                text-align: center;
+                border-top: solid 1px rgb(100, 100, 100);
+                border-bottom: solid 1px rgb(100, 100, 100);
+                padding: 0.2em 0;
+                width: 40%;
+                left: 30%;
+                margin: 0 0 2em 0;
+            }
+
+            .tuvan > .noidung > .baivietlienquan > .khung {
+                padding: 0;
+            }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > div {
+                    text-align: center;
+                    padding: 0 2em;
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > .proj-1 {
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > .proj-2 {
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > .proj-3 {
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > .proj-4 {
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung > div > a {
+                    font-family: Roboto-Regular;
+                    font-size: 1.5em;
+                    color: rgb(100, 100, 100);
+                    text-decoration: none;
+                }
+
+                    .tuvan > .noidung > .baivietlienquan > .khung > div > a > img {
+                        margin: 0 0 1em 0;
+                    }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    .tuvan {
+    }
+
+        /*Banner*/
+        .tuvan > .banner {
+        }
+
+            .tuvan > .banner > p {
+                font-size: 1.5em;
+                padding: 0.3em 4em;
+                margin: 1em 0;
+            }
+
+        /*Nội dung*/
+        .tuvan > .noidung {
+        }
+
+            /*Các bài viết và dòng số trang*/
+            .tuvan > .noidung > .cacbaiviet {
+            }
+
+                /*Khung chứa các bài viết*/
+                .tuvan > .noidung > .cacbaiviet > div {
+                }
+
+                    /*Bài viết*/
+                    .tuvan > .noidung > .cacbaiviet > div > .baiviet {
+                        margin: 0 0 5em 0;
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text {
+                            padding: 1em 1em;
+                        }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tieude {
+                                font-size: 1.5em;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tomtat {
+                                font-size: 1.3em;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a {
+                                font-size: 1.3em;
+                            }
+
+                /*Số trang*/
+                .tuvan > .noidung > .cacbaiviet > .num-page {
+                    padding: 0 35%;
+                }
+
+            /*Bài viết liên quan*/
+
+            .tuvan > .noidung > .baivietlienquan {
+                padding: 0;
+                margin: 3em 0;
+            }
+
+                .tuvan > .noidung > .baivietlienquan > p {
+                    font-size: 2em;
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung {
+                    padding: 0 1%;
+                }
+
+                    .tuvan > .noidung > .baivietlienquan > .khung > div {
+                        padding: 0;
+                        margin: 0 1%;
+                        width: 23%;
+                    }
+
+                        .tuvan > .noidung > .baivietlienquan > .khung > div > a {
+                            font-size: 1.3em;
+                        }
+
+                            .tuvan > .noidung > .baivietlienquan > .khung > div > a > img {
+                                margin: 0 0 1em 0;
+                                width: 100%;
+                                height: 10em;
+                            }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .tuvan {
+        padding: 0;
+    }
+
+        /*Banner*/
+        .tuvan > .banner {
+        }
+
+            .tuvan > .banner > img {
+                padding: 0;
+            }
+
+            .tuvan > .banner > p {
+                width: 80%;
+                left: 10%;
+                padding: 0.3em 2em;
+                margin: 1em 0;
+            }
+
+        /*Nội dung*/
+        .tuvan > .noidung {
+            padding: 0;
+        }
+
+            /*Các bài viết và dòng số trang*/
+            .tuvan > .noidung > .cacbaiviet {
+                padding: 0;
+            }
+
+                /*Khung chứa các bài viết*/
+                .tuvan > .noidung > .cacbaiviet > div {
+                    padding: 0;
+                }
+
+                    /*Bài viết*/
+                    .tuvan > .noidung > .cacbaiviet > div > .baiviet {
+                        margin: 0 0 3em 0;
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text {
+                            padding: 0em 1em;
+                        }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tieude {
+                                font-size: 1.5em;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tomtat {
+                                font-size: 1.1em;
+                                margin: 0 0 1em 0;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a {
+                                font-size: 1.2em;
+                            }
+
+                /*Số trang*/
+                .tuvan > .noidung > .cacbaiviet > .num-page {
+                    padding: 0 34%;
+                }
+
+            /*Bài viết liên quan*/
+            .tuvan > .noidung > .baivietlienquan {
+                padding: 0;
+                margin: 3em 0;
+            }
+
+                .tuvan > .noidung > .baivietlienquan > p {
+                    font-size: 2em;
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung {
+                    padding: 0 1%;
+                }
+
+                    .tuvan > .noidung > .baivietlienquan > .khung > div {
+                        padding: 0;
+                        margin: 0 1%;
+                        width: 23%;
+                    }
+
+                        .tuvan > .noidung > .baivietlienquan > .khung > div > a {
+                            font-size: 1.3em;
+                        }
+
+                            .tuvan > .noidung > .baivietlienquan > .khung > div > a > img {
+                                margin: 0 0 1em 0;
+                                width: 100%;
+                                height: 10em;
+                            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .tuvan {
+        padding: 0;
+    }
+
+        /*Banner*/
+        .tuvan > .banner {
+            padding: 0;
+            margin: 0 0 3em 0;
+        }
+
+            .tuvan > .banner > img {
+                padding: 0;
+            }
+
+            .tuvan > .banner > p {
+                font-size: 1em;
+                width: 80%;
+                left: 10%;
+                padding: 0.3em 0em;
+                margin: 1em 0;
+            }
+
+        /*Nội dung*/
+        .tuvan > .noidung {
+            padding: 0;
+        }
+
+            /*Các bài viết và dòng số trang*/
+            .tuvan > .noidung > .cacbaiviet {
+            }
+
+                /*Khung chứa các bài viết*/
+                .tuvan > .noidung > .cacbaiviet > div {
+                    padding: 0;
+                }
+
+                    /*Bài viết*/
+                    .tuvan > .noidung > .cacbaiviet > div > .baiviet {
+                        margin: 0 0 1em 0;
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > img {
+                            padding: 0;
+                            width: 100%;
+                            display: none;
+                        }
+
+                        .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text {
+                            padding: 2em 1em;
+                        }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tieude {
+                                font-size: 1.5em;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > .tomtat {
+                                font-size: 1em;
+                            }
+
+                            .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a {
+                                font-size: 1em;
+                                width: 10%;
+                                left: 80%;
+                                margin: 0;
+                            }
+
+                                .tuvan > .noidung > .cacbaiviet > div > .baiviet > .text > a:hover {
+                                    color: rgb(0, 0, 0);
+                                }
+
+                /*Số trang*/
+                .tuvan > .noidung > .cacbaiviet > .num-page {
+                    padding: 0;
+                    width: 85%;
+                    left: 7.5%;
+                }
+
+                    .tuvan > .noidung > .cacbaiviet > .num-page > ul {
+                    }
+
+                        .tuvan > .noidung > .cacbaiviet > .num-page > ul > li {
+                        }
+
+                            .tuvan > .noidung > .cacbaiviet > .num-page > ul > li > a {
+                            }
+
+            /*Bài viết liên quan*/
+            .tuvan > .noidung > .baivietlienquan {
+                padding: 0;
+                margin: 3em 0;
+            }
+
+                .tuvan > .noidung > .baivietlienquan > p {
+                    font-size: 1.5em;
+                    width: 70%;
+                    left: 15%;
+                }
+
+                .tuvan > .noidung > .baivietlienquan > .khung {
+                    padding: 0 1%;
+                }
+
+                    .tuvan > .noidung > .baivietlienquan > .khung > div {
+                        padding: 0;
+                        margin: 0 1%;
+                        width: 48%;
+                    }
+
+                        .tuvan > .noidung > .baivietlienquan > .khung > div > a {
+                            font-size: 1.3em;
+                        }
+
+                            .tuvan > .noidung > .baivietlienquan > .khung > div > a > img {
+                                margin: 0 0 1em 0;
+                                width: 100%;
+                                height: 10em;
+                            }
+}

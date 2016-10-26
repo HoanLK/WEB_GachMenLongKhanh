@@ -1,0 +1,806 @@
+.loaisanpham {
+    padding: 10em 0 0 0;
+}
+
+    /*Banner*/
+    .loaisanpham > .banner {
+        padding: 0;
+        width: 90%;
+        left: 5%;
+    }
+
+        /*Slide & danh mục*/
+        .loaisanpham > .banner > .link {
+            padding: 0;
+        }
+
+            /*Slide*/
+            .loaisanpham > .banner > .link > .slide {
+                padding: 0 1em 0 0;
+            }
+
+                .loaisanpham > .banner > .link > .slide > div {
+                }
+
+                    .loaisanpham > .banner > .link > .slide > div > div {
+                    }
+
+                        .loaisanpham > .banner > .link > .slide > div > div > div {
+                        }
+
+                            .loaisanpham > .banner > .link > .slide > div > div > div > img {
+                                width: 100%;
+                                height: 30em;
+                            }
+
+            /*Danh mục*/
+            .loaisanpham > .banner > .link > .danhmuc {
+                background: rgb(78, 78, 78);
+                height: 30em;
+                padding: 0;
+            }
+
+                .loaisanpham > .banner > .link > .danhmuc > p {
+                    font-family: Roboto-Black;
+                    font-size: 2.5em;
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-top: solid 2px rgb(255, 255, 255);
+                    border-bottom: solid 2px rgb(255, 255, 255);
+                    width: 80%;
+                    left: 10%;
+                    padding: 0.1em 0;
+                    margin: 1em 0 1em 0;
+                }
+
+                .loaisanpham > .banner > .link > .danhmuc > .cacmuc {
+                    width: 80%;
+                    left: 10%;
+                    padding: 0;
+                }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
+                        display: block;
+                        font-family: Roboto-Regular;
+                        font-size: 1.4em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        border: solid 1px rgb(255, 255, 255);
+                        text-align: center;
+                        padding: 0.5em 0 0.4em 0;
+                        margin: 0 0 0.5em 0;
+                        cursor: pointer;
+                    }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a:hover {
+                            color: rgb(78, 78, 78);
+                            background: rgb(255, 255, 255);
+                        }
+
+                .loaisanpham > .banner > .link > .danhmuc > .share {
+                    display: inline;
+                    text-align: center;
+                    margin: 1em 0 0 0;
+                }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share > p {
+                        display: inline;
+                        font-family: Roboto-Regular;
+                        font-size: 1.2em;
+                        color: rgb(255, 255, 255);
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share > a {
+                        font-size: 1.5em;
+                        color: rgb(255, 255, 255);
+                        margin: 0 0.3em;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share > a:hover {
+                        color: rgb(59, 89, 152);
+                    }
+
+
+        /*Lời dẫn*/
+        .loaisanpham > .banner > p {
+            font-family: Roboto-Regular;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 2em 0 1em 0;
+        }
+
+    /*Danh sách sản phẩm*/
+    .loaisanpham > .danhsachsp {
+        width: 90%;
+        left: 5%;
+        margin: 1em 0;
+    }
+
+        /*Tiêu đề*/
+        .loaisanpham > .danhsachsp > p {
+            font-family: Roboto-Black;
+            font-size: 2em;
+            color: rgb(74, 74, 74);
+            text-transform: uppercase;
+            text-align: center;
+            border-top: solid 2px rgb(74, 74, 74);
+            border-bottom: solid 2px rgb(74, 74, 74);
+            width: 30%;
+            left: 35%;
+            padding: 0.2em 0;
+            margin: 1em 0 1em 0;
+        }
+
+        /*Các sản phẩm*/
+        .loaisanpham > .danhsachsp > .cacsanpham {
+        }
+
+            /*Khung các hàng*/
+            .loaisanpham > .danhsachsp > .cacsanpham > div {
+            }
+
+                /*Từng sản phẩm*/
+                .loaisanpham > .danhsachsp > .cacsanpham > div > div {
+                    text-align: center;
+                }
+
+                    .loaisanpham > .danhsachsp > .cacsanpham > div > div > a {
+                        text-decoration: none;
+                        color: rgb(74, 74, 74);
+                    }
+
+                        .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > img {
+                            width: 70%;
+                        }
+
+                        .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p {
+                            font-family: Roboto-Regular;
+                            font-size: 1.2em;
+                            margin: 0.5em 0 1em 0;
+                        }
+
+                            .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p > span {
+                                font-family: Roboto-Black;
+                                text-transform: uppercase;
+                                font-size: 1.2em;
+                            }
+
+        /*Số thứ tự trang*/
+        .loaisanpham > .danhsachsp > .num-page {
+        }
+
+            /*Pagination*/
+            .loaisanpham > .danhsachsp > .num-page > .pagination {
+                margin: 0;
+                width: 22%;
+                left: 39%;
+            }
+
+                .loaisanpham > .danhsachsp > .num-page > .pagination > li {
+                }
+
+                    .loaisanpham > .danhsachsp > .num-page > .pagination > li > a {
+                    }
+
+                        .loaisanpham > .danhsachsp > .num-page > .pagination > li > a > span {
+                        }
+
+    /*Bộ sưu tập ảnh*/
+    .loaisanpham > .bosutap {
+        width: 90%;
+        left: 5%;
+        padding: 0;
+        margin: 2em 0 4em 0;
+    }
+
+        /*Tiêu đề*/
+        .loaisanpham > .bosutap > p {
+            font-family: Roboto-Black;
+            font-size: 2em;
+            color: rgb(74, 74, 74);
+            text-transform: uppercase;
+            text-align: center;
+            border-top: solid 2px rgb(74, 74, 74);
+            border-bottom: solid 2px rgb(74, 74, 74);
+            width: 30%;
+            left: 35%;
+            padding: 0.2em 0;
+            margin: 1em 0 1em 0;
+        }
+
+        /*Khung*/
+        .loaisanpham > .bosutap > div {
+            padding: 0;
+        }
+
+            /*Ảnh to*/
+            .loaisanpham > .bosutap > div > .main {
+                padding: 0;
+            }
+
+                .loaisanpham > .bosutap > div > .main > img {
+                    width: 100%;
+                    height: 40em;
+                }
+
+                click-img{
+                    z-index: 2;
+                }
+
+            /*Ảnh bên*/
+            .loaisanpham > .bosutap > div > .sub {
+                width: 40%;
+                left: 1.5%;
+                padding: 0.5em;
+                background: rgb(74, 74, 74);
+            }
+
+                .loaisanpham > .bosutap > div > .sub > div {
+                    padding: 0;
+                    text-align: center;
+                    padding: 0.5em;
+                }
+
+                    .loaisanpham > .bosutap > div > .sub > div > img {
+                        width: 100%;
+                        height: 12em;
+                        cursor: pointer;
+                    }
+
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+    .loaisanpham {
+    }
+
+        /*Banner*/
+        .loaisanpham > .banner {
+        }
+
+            /*Slide & danh mục*/
+            .loaisanpham > .banner > .link {
+            }
+
+                /*Slide*/
+                .loaisanpham > .banner > .link > .slide > div > div > div > img {
+                    height: 35em;
+                }
+
+                /*Danh mục*/
+                .loaisanpham > .banner > .link > .danhmuc {
+                    height: 35em;
+                }
+
+                    .loaisanpham > .banner > .link > .danhmuc > p {
+                        font-size: 3em;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
+                        font-size: 1.6em;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share > p {
+                        font-size: 1.5em;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share > a > img {
+                        width: 1.8em;
+                    }
+
+            /*Lời dẫn*/
+            .loaisanpham > .banner > p {
+                font-size: 1.5em;
+            }
+
+        /*Danh sách sản phẩm*/
+        .loaisanpham > .danhsachsp {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .danhsachsp > p {
+                font-size: 2.5em;
+                width: 40%;
+                left: 30%;
+            }
+
+            /*Các sản phẩm*/
+            .loaisanpham > .danhsachsp > .cacsanpham {
+            }
+
+                /*Khung các hàng*/
+                .loaisanpham > .danhsachsp > .cacsanpham > div {
+                }
+
+                    /*Từng sản phẩm*/
+
+                    .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > img {
+                        width: 80%;
+                    }
+
+        /*Bộ sưu tập ảnh*/
+        .loaisanpham > .bosutap {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .bosutap > p {
+                font-size: 2.5em;
+                width: 30%;
+                left: 35%;
+                margin: 1em 0 1em 0;
+            }
+
+            /*Khung*/
+            .loaisanpham > .bosutap > div {
+            }
+
+                /*Ảnh to*/
+                .loaisanpham > .bosutap > div > .main {
+                }
+
+                /*Ảnh bên*/
+                .loaisanpham > .bosutap > div > .sub {
+                }
+}
+
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    .loaisanpham {
+    }
+
+        /*Banner*/
+        .loaisanpham > .banner {
+        }
+
+            /*Slide & danh mục*/
+            .loaisanpham > .banner > .link {
+            }
+
+                /*Slide*/
+                .loaisanpham > .banner > .link > .slide {
+                }
+
+                /*Danh mục*/
+                .loaisanpham > .banner > .link > .danhmuc > p {
+                    font-size: 2em;
+                    margin: 1.5em 0 1em 0;
+                }
+
+                .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
+                    font-size: 1.4em;
+                }
+
+            /*Lời dẫn*/
+            .loaisanpham > .banner > p {
+                font-size: 1.4em;
+                margin: 2em 0 2.5em 0;
+            }
+
+        /*Danh sách sản phẩm*/
+        .loaisanpham > .danhsachsp {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .danhsachsp > p {
+                width: 40%;
+                left: 30%;
+            }
+
+            /*Các sản phẩm*/
+            .loaisanpham > .danhsachsp > .cacsanpham {
+            }
+
+                /*Khung các hàng*/
+                .loaisanpham > .danhsachsp > .cacsanpham > div {
+                }
+
+                    /*Từng sản phẩm*/
+                    .loaisanpham > .danhsachsp > .cacsanpham > div > div {
+                    }
+
+                        .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > img {
+                            width: 100%;
+                        }
+
+            /*Số thứ tự trang*/
+            .loaisanpham > .danhsachsp > .num-page {
+            }
+
+                /*Pagination*/
+                .loaisanpham > .danhsachsp > .num-page > .pagination {
+                    width: 30%;
+                    left: 35%;
+                }
+
+        /*Bộ sưu tập ảnh*/
+        .loaisanpham > .bosutap {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .bosutap > p {
+                width: 40%;
+                left: 30%;
+            }
+
+            /*Khung*/
+            .loaisanpham > .bosutap > div {
+            }
+
+                /*Ảnh to*/
+                .loaisanpham > .bosutap > div > .main {
+                }
+
+                /*Ảnh bên*/
+                .loaisanpham > .bosutap > div > .sub {
+                }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .loaisanpham {
+        padding: 2.5em 0 0 0;
+    }
+
+        /*Banner*/
+        .loaisanpham > .banner {
+        }
+
+            /*Slide & danh mục*/
+            .loaisanpham > .banner > .link {
+                padding: 0;
+            }
+
+                /*Slide*/
+                .loaisanpham > .banner > .link > .slide {
+                }
+
+                    .loaisanpham > .banner > .link > .slide > div {
+                    }
+
+                        .loaisanpham > .banner > .link > .slide > div > div {
+                        }
+
+                            .loaisanpham > .banner > .link > .slide > div > div > div {
+                            }
+
+                                .loaisanpham > .banner > .link > .slide > div > div > div > img {
+                                }
+
+                /*Danh mục*/
+                .loaisanpham > .banner > .link > .danhmuc {
+                }
+
+                    .loaisanpham > .banner > .link > .danhmuc > p {
+                        font-size: 1.7em;
+                        margin: 2em 0 1em 0;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .cacmuc {
+                    }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
+                            font-size: 1.2em;
+                            margin: 0 0 1em 0;
+                        }
+
+                            .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a:hover {
+                                color: rgb(78, 78, 78);
+                                background: rgb(255, 255, 255);
+                            }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share {
+                        display: inline;
+                        text-align: center;
+                        margin: 1em 0 0 0;
+                    }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .share > p {
+                            font-size: 1.3em;
+                        }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .share > a {
+                        }
+
+                            .loaisanpham > .banner > .link > .danhmuc > .share > a > img {
+                                width: 1.5em;
+                            }
+
+            /*Lời dẫn*/
+            .loaisanpham > .banner > p {
+            }
+
+        /*Danh sách sản phẩm*/
+        .loaisanpham > .danhsachsp {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .danhsachsp > p {
+                font-size: 2em;
+                width: 50%;
+                left: 25%;
+                margin: 1.5em 0 1em 0;
+            }
+
+            /*Các sản phẩm*/
+            .loaisanpham > .danhsachsp > .cacsanpham {
+                padding: 0;
+            }
+
+                /*Khung các hàng*/
+                .loaisanpham > .danhsachsp > .cacsanpham > div {
+                    padding: 0;
+                }
+
+                    /*Từng sản phẩm*/
+                    .loaisanpham > .danhsachsp > .cacsanpham > div > div {
+                        padding: 0;
+                    }
+
+                        .loaisanpham > .danhsachsp > .cacsanpham > div > div > a {
+                        }
+
+                            .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > img {
+                                width: 90%;
+                                height: 20em;
+                            }
+
+                            .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p {
+                                font-size: 1.2em;
+                                margin: 0.5em 0 1em 0;
+                            }
+
+                                .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p > span {
+                                    font-size: 1.3em;
+                                }
+
+            /*Số thứ tự trang*/
+            .loaisanpham > .danhsachsp > .num-page {
+            }
+
+                /*Pagination*/
+                .loaisanpham > .danhsachsp > .num-page > .pagination {
+                    width: 39%;
+                    left: 30.5%;
+                }
+
+                    .loaisanpham > .danhsachsp > .num-page > .pagination > li {
+                    }
+
+                        .loaisanpham > .danhsachsp > .num-page > .pagination > li > a {
+                        }
+
+                            .loaisanpham > .danhsachsp > .num-page > .pagination > li > a > span {
+                            }
+
+        /*Bộ sưu tập ảnh*/
+        .loaisanpham > .bosutap {
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .bosutap > p {
+                width: 50%;
+                left: 25%;
+            }
+
+            /*Khung*/
+            .loaisanpham > .bosutap > div {
+                padding: 0;
+            }
+
+                /*Ảnh to*/
+                .loaisanpham > .bosutap > div > .main {
+                    padding: 0;
+                }
+
+                    .loaisanpham > .bosutap > div > .main > img {
+                        width: 100%;
+                        height: 40em;
+                    }
+
+                /*Ảnh bên*/
+                .loaisanpham > .bosutap > div > .sub {
+                    width: 40%;
+                    left: 1.5%;
+                    padding: 0.5em;
+                    background: rgb(74, 74, 74);
+                }
+
+                    .loaisanpham > .bosutap > div > .sub > div {
+                        padding: 0;
+                        text-align: center;
+                        padding: 0.5em;
+                    }
+
+                        .loaisanpham > .bosutap > div > .sub > div > img {
+                            width: 100%;
+                            height: 12em;
+                        }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .loaisanpham {
+        padding: 0;
+        width: 100%;
+    }
+
+        /*Banner*/
+        .loaisanpham > .banner {
+            padding: 0;
+            width: 100%;
+            left: 0;
+        }
+
+            /*Slide & danh mục*/
+            .loaisanpham > .banner > .link {
+                padding: 0;
+            }
+
+                /*Slide*/
+                .loaisanpham > .banner > .link > .slide {
+                    padding: 0;
+                }
+
+                    .loaisanpham > .banner > .link > .slide > div {
+                    }
+
+                        .loaisanpham > .banner > .link > .slide > div > div {
+                        }
+
+                            .loaisanpham > .banner > .link > .slide > div > div > div {
+                            }
+
+                                .loaisanpham > .banner > .link > .slide > div > div > div > img {
+                                    width: 100%;
+                                    height: 20em;
+                                }
+
+                /*Danh mục*/
+                .loaisanpham > .banner > .link > .danhmuc {
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .loaisanpham > .banner > .link > .danhmuc > p {
+                        font-size: 1.5em;
+                    }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .cacmuc {
+                        width: 80%;
+                        left: 10%;
+                        padding: 0;
+                    }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
+                            font-size: 1.2em;
+                        }
+
+                            .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a:hover {
+                            }
+
+                    .loaisanpham > .banner > .link > .danhmuc > .share {
+                        margin: 1em 0 1em 0;
+                    }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .share > p {
+                        }
+
+                        .loaisanpham > .banner > .link > .danhmuc > .share > a {
+                        }
+
+                            .loaisanpham > .banner > .link > .danhmuc > .share > a > img {
+                            }
+
+            /*Lời dẫn*/
+            .loaisanpham > .banner > p {
+                font-size: 1em;
+                text-align: justify;
+            }
+
+        /*Danh sách sản phẩm*/
+        .loaisanpham > .danhsachsp {
+            width: 100%;
+            left: 0;
+            margin: 1em 0;
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .danhsachsp > p {
+                font-size: 1.5em;
+                width: 80%;
+                left: 10%;
+            }
+
+            /*Các sản phẩm*/
+            .loaisanpham > .danhsachsp > .cacsanpham {
+            }
+
+                /*Khung các hàng*/
+                .loaisanpham > .danhsachsp > .cacsanpham > div {
+                }
+
+                    /*Từng sản phẩm*/
+                    .loaisanpham > .danhsachsp > .cacsanpham > div > div {
+                    }
+
+                        .loaisanpham > .danhsachsp > .cacsanpham > div > div > a {
+                        }
+
+                            .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > img {
+                                width: 100%;
+                            }
+
+                            .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p {
+                                margin: 0.5em 0 2em 0;
+                            }
+
+                                .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p > span {
+                                }
+
+            /*Số thứ tự trang*/
+            .loaisanpham > .danhsachsp > .num-page {
+            }
+
+                /*Pagination*/
+                .loaisanpham > .danhsachsp > .num-page > .pagination {
+                    width: 100%;
+                    left: 0;
+                    padding: 0 5%;
+                }
+
+                    .loaisanpham > .danhsachsp > .num-page > .pagination > li {
+                    }
+
+                        .loaisanpham > .danhsachsp > .num-page > .pagination > li > a {
+                        }
+
+                            .loaisanpham > .danhsachsp > .num-page > .pagination > li > a > span {
+                            }
+
+        /*Bộ sưu tập ảnh*/
+        .loaisanpham > .bosutap {
+            width: 100%;
+            left: 0;
+            padding: 0;
+            margin: 2em 0 0 0;
+        }
+
+            /*Tiêu đề*/
+            .loaisanpham > .bosutap > p {
+                font-size: 1.5em;
+                width: 80%;
+                left: 10%;
+            }
+
+            /*Khung*/
+            .loaisanpham > .bosutap > div {
+                padding: 0;
+            }
+
+                /*Ảnh to*/
+                .loaisanpham > .bosutap > div > .main {
+                    padding: 0;
+                }
+
+                    .loaisanpham > .bosutap > div > .main > img {
+                        width: 100%;
+                        height: 20em;
+                    }
+
+                /*Ảnh bên*/
+                .loaisanpham > .bosutap > div > .sub {
+                    width: 100%;
+                    left: 0;
+                    padding: 0.5em;
+                }
+
+                    .loaisanpham > .bosutap > div > .sub > div {
+                        padding: 0.5em;
+                    }
+
+                        .loaisanpham > .bosutap > div > .sub > div > img {
+                            height: 7em;
+                        }
+}

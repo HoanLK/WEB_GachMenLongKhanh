@@ -1,0 +1,29 @@
+﻿<!--Tin tức-->
+<div class="tinTuc" ng-controller="categoryPostController">
+    <a href="/danh-muc-bai-viet/tin-khoa-hoc-2" style="display:block" class="tieuDe">TIN TỨC KHOA HỌC</a>
+    <ul class="list">
+        <li class="item" dir-paginate="(index, value) in tinKhoaHocs | itemsPerPage:5">
+            <a class="tieuDe" href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a>
+            <img ng-src="{{value.image}}" class="img-responsive" />
+            <div class="tomTat" ng-bind-html="value.description | limitTo: 100"></div>
+        </li>
+    </ul>
+</div>
+<!--Hỏi đáp-->
+<div class="hoiDap" ng-controller="categoryPostController">
+    <a href="/danh-muc-bai-viet/goc-hoi-dap-4" style="display:block" class="tieuDe">GÓC HỎI ĐÁP</a>
+    <ul class="list">
+        <li class="item" dir-paginate="(index, value) in hoiDaps | itemsPerPage:5"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}"><span class="fa fa-question"></span>{{value.title}}</a></li>
+    </ul>
+</div>
+<!--Video-->
+<div class="video" ng-controller="videoController">
+    <p class="tieuDe">GÓC VIDEO</p>
+    <ul class="list">
+        <li class="item" ng-repeat="(index, value) in videos">
+            <p class="tieuDe">{{value.title}}</p>
+            <iframe ng-src="{{value.link_video}}" frameborder="0" allowfullscreen width="100%"></iframe>
+            <noframes>Xin lỗi, trình duyệt của bạn không hỗ trợ Phát video.</noframes>
+        </li>
+    </ul>
+</div>

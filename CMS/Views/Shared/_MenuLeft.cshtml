@@ -1,0 +1,8 @@
+﻿<!--Danh mục sản phẩm-->
+<div class="sanPham" ng-controller="categoryProductController">
+    <input type="hidden" value="1" id="idCategoryProduct" />
+    <a href="/danh-muc-san-pham" style="display:block" class="tieuDe">SẢN PHẨM</a>
+    <ul class="list">
+        <li class="item" ng-repeat="(index, value) in products"><a href="/san-pham/{{value.alias}}-{{value.idProduct}}">{{value.title}}</a></li>
+    </ul>
+</div>

@@ -1,0 +1,110 @@
+﻿@model CMS.Models.CategoryProduct
+@{
+    ViewBag.Title = ViewBag.title;
+}
+
+<div ng-controller="categoryProductController">
+    <input type="hidden" value="@Model.idCategory" id="idCategoryProduct" />
+    <section class="loaisanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="banner col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="link col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="slide col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="@ViewBag.image" alt="@ViewBag.title">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="danhmuc col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">@ViewBag.title</p>
+                    <div class="cacmuc col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a id="next-to-danhsachsanpham">catalogue sản phẩm</a>
+                        <a id="next-to-bosuutap">bộ sưu tập hình ảnh</a>
+                        <a id="next-to-bando">đặt mua hàng ở đâu</a>
+                        <a id="next-to-lienhe">liên hệ với chúng tôi</a>
+                    </div>
+                    <div class="share col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Share on:</p>
+                        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="gp"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="yt"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Chúng tôi sản xuất và cung cấp một phạm vi rộng lớn các loại gạch men, đá cẩm thạch cao cấp, sang trọng và đầy đủ kích cỡ.
+                Được lấy cảm hứng từ sự sang trọng và quý phái, Gạch men Long Khánh luôn mang đến cho quý khách những sản phẩm tốt nhất, hoàn hảo nhất và chất lượng nhất.
+            </p>
+        </div>
+        <article id="danhsachsanpham" class="danhsachsp col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">catalogue sản phẩm</p>
+            <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" dir-paginate="(index, value) in products | itemsPerPage:8">
+                        <a href="#" ng-click="show(value.idProduct)" data-toggle="modal" data-target="#myModal">
+                            <img ng-src="{{value.image}}" alt="{{value.title}}" />
+                            <p>
+                                <span>{{value.title}}</span><br />
+                                Kích thước: {{value.KichThuoc}}
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="num-page col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <dir-pagination-controls></dir-pagination-controls>
+            </div>
+        </article>
+        <article id="bosuutap" class="bosutap col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">bộ sưu tập hình ảnh</p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="main col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <img id="main" ng-src="{{image}}" alt="" />
+                </div>
+                <div class="sub col-xs-12 col-sm-5 col-md-5 col-lg-5" dir-paginate="(index, value) in images | itemsPerPage:6">
+                    <div id="sub-1" class="col-xs-4 col-sm-12 col-md-6 col-lg-6 sub">
+                        <img ng-click="load(value.anh)" ng-src="{{value.anh}}" alt="{{value.title}}" />
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="myModalLabel">Chi tiết sản phẩm</p>
+                </div>
+                <div class="modal-body">
+                    <img ng-src="{{product.image}}" alt="{{product.title}}" class="col-xs-5 col-sm-5 col-md-5 col-lg-5" />
+                    <div class="info col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <p>
+                            <span>mã sản phẩm: </span><span class="masanpham">{{product.title}}</span>
+                        </p>
+                        <p>
+                            <span>kích thước: </span>{{product.KichThuoc}} cm
+                        </p>
+                        <p>
+                            <span>chất liệu: </span> {{product.ChatLieu}}
+                        </p>
+                        <p ng-bind-html="product.content"></p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

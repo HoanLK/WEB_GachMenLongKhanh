@@ -1,0 +1,105 @@
+﻿@model CMS.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="trangbaiviet">
+    <!--Banner-->
+    <div class="banner col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <img src="~/Content/Front/Image/tuvan/banner-bg.png" alt="Banner" />
+    </div>
+
+    <!--Phần nội dung-->
+    <div class="phanthan col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-controller="postController">
+        <input type="hidden" value="@Model.idPost" id="idPost" />
+        <!--Phần cột bên trái-->
+        <aside class="hidden-xs hidden-sm col-md-3 col-lg-3">
+            <a href="/danh-mua-bai-viet/khong-gian-dep-3" class="line-1 col-md-12 col-lg-12">Không gian đẹp</a>
+            <a href="/danh-muc-bai-viet/goc-tu-van-2" class="line-2 col-md-12 col-lg-12">Góc tư vấn</a>
+
+            <!--Bài viết liên quan-->
+            <div class="baivietlienquan col-md-12 col-lg-12">
+                <p class="col-md-12 col-lg-12">Bài viết liên quan</p>
+                <div class="khung col-md-12 col-lg-12">
+                    <div class="col-md-12 col-lg-12" dir-paginate="(index, value) in relatedPosts | itemsPerPage:5">
+                        <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+                            <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
+                            {{value.title}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!--Phần bài viết chính-->
+        <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ng-controller="postController">
+            <p class="tieude col-xs-12 col-sm-12 col-md-12 col-lg-12">{{post.title}}</p>
+            <div class="noidung col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="post.content"></div>
+        </article>
+
+        <!--Bài viết liên quan trên đt-->
+        <aside class="col-xs-12 col-sm-12 hidden-md hidden-lg" ng-controller="postController">
+            <!--Bài viết liên quan-->
+            <div class="baivietlienquan col-xs-12 col-sm-12">
+                <p class="col-xs-12 col-sm-12">Bài viết liên quan</p>
+                <div class="khung col-xs-12 col-sm-12">
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+                            <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
+                            {{value.title}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!--Sản phẩm nổi bật-->
+    <div class="proj hidden-xs hidden-sm col-md-12 col-lg-12" ng-controller="categoryProductController">
+        <p class="col-md-12 col-lg-12">sản phẩm nổi bật</p>
+        <div class="khung col-md-12 col-lg-12">
+            <div class="col-md-3 col-lg-3" dir-paginate="(index, value) in spNoiBats | itemsPerPage:4">
+                <a href="#" ng-click="show(value.idProduct)" data-toggle="modal" data-target="#myModal">
+                    <p>{{id}}</p>
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
+                    {{value.title}}
+                </a>
+            </div>
+        </div>
+
+        <!--Thông tin sản phẩm-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="myModalLabel">Chi tiết sản phẩm</p>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="{{product.image}}" alt="{{product.title}}" class="col-xs-5 col-sm-5 col-md-5 col-lg-5" />
+                        <div class="info col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                            <p>
+                                <span>mã sản phẩm: </span><span class="masanpham">{{product.title}}</span>
+                            </p>
+                            <p>
+                                <span>kích thước: </span>{{product.KichThuoc}} cm
+                            </p>
+                            <p>
+                                <span>chất liệu: </span> {{product.ChatLieu}}
+                            </p>
+                            <p ng-bind-html="product.content"></p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

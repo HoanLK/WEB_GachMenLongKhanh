@@ -1,0 +1,309 @@
+﻿.trangbaiviet {
+    padding: 0;
+}
+
+    /*Banner*/
+    .trangbaiviet > .banner {
+        padding: 0;
+    }
+
+        .trangbaiviet > .banner > img {
+            width: 100%;
+        }
+
+    /*Phần thân*/
+    .trangbaiviet > .phanthan {
+        padding: 0;
+        margin: 3.5em 0;
+    }
+
+        /*Thanh bên trái*/
+        .trangbaiviet > .phanthan > aside {
+        }
+
+            .trangbaiviet > .phanthan > aside > a {
+                font-family: Roboto-Regular;
+                font-size: 2em;
+                color: rgb(100, 100, 100);
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                border-top: solid 2px rgb(100, 100, 100);
+                border-bottom: solid 2px rgb(100, 100, 100);
+                padding: 0.2em 0;
+                margin: 0.5em 0;
+                transition: all .3s;
+            }
+
+                .trangbaiviet > .phanthan > aside > a:hover {
+                    color: rgb(0, 0, 0);
+                    border-top: solid 2px rgb(0, 0, 0);
+                    border-bottom: solid 2px rgb(0, 0, 0);
+                }
+
+
+            .trangbaiviet > .phanthan > aside > .line-1 {
+                margin: 0 0 0.5em 0;
+            }
+
+            .trangbaiviet > .phanthan > aside > .line-2 {
+            }
+
+            /*Bài viết liên quan*/
+            .trangbaiviet > .phanthan > aside > .baivietlienquan {
+                border-top: solid 2px rgb(100, 100, 100);
+                border-bottom: solid 2px rgb(100, 100, 100);
+                padding: 0 0 3em 0;
+                margin: 1em 0;
+            }
+
+                .trangbaiviet > .phanthan > aside > .baivietlienquan > p {
+                    font-family: Roboto-Regular;
+                    font-size: 1.6em;
+                    color: rgb(100, 100, 100);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 0.5em 0 0 0;
+                }
+
+                .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung {
+                    text-align: center;
+                    padding: 0;
+                }
+
+                    .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div {
+                    }
+
+                        .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a {
+                            font-family: Roboto-Regular;
+                            font-size: 1.3em;
+                            color: rgb(100, 100, 100);
+                            text-decoration: none;
+                            transition: all .3s;
+                        }
+
+                            .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a:hover {
+                                color: rgb(0, 0, 0);
+                            }
+
+                            .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a > img {
+                                width: 100%;
+                                margin: 0.5em 0 1em 0;
+                            }
+
+        /*Phần bài viết*/
+        .trangbaiviet > .phanthan > article {
+        }
+
+            .trangbaiviet > .phanthan > article > .tieude {
+                font-family: Roboto-Regular;
+                font-size: 2em;
+                text-transform: uppercase;
+                text-align: center;
+                color: rgb(100, 100, 100);
+                border-top: solid 2px rgb(100, 100, 100);
+                border-bottom: solid 2px rgb(100, 100, 100);
+                width: 90%;
+                left: 5%;
+                margin: 0 0 0.5em 0;
+            }
+
+            .trangbaiviet > .phanthan > article > .noidung {
+                font-family: Roboto-Light;
+                font-size: 1.3em;
+                text-align: justify;
+                line-height: 1.7em;
+            }
+
+    /*Dự án tiêu biêủ*/
+    .trangbaiviet > .proj {
+        padding: 0 1em;
+        margin: 3em 0;
+    }
+
+        .trangbaiviet > .proj > p {
+            font-family: Roboto-Regular;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: center;
+            border-top: solid 1px rgb(100, 100, 100);
+            border-bottom: solid 1px rgb(100, 100, 100);
+            padding: 0.2em 0;
+            width: 40%;
+            left: 30%;
+            margin: 0 0 2em 0;
+        }
+
+        .trangbaiviet > .proj > .khung {
+            padding: 0;
+        }
+
+            .trangbaiviet > .proj > .khung > div {
+                text-align: center;
+                padding: 0 2em;
+            }
+
+                .trangbaiviet > .proj > .khung > div > a {
+                    font-family: Roboto-Regular;
+                    font-size: 1.5em;
+                    color: rgb(100, 100, 100);
+                    text-decoration: none;
+                }
+
+                    .trangbaiviet > .proj > .khung > div > a > img {
+                        margin: 0 0 1em 0;
+                    }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    /*Thanh bên trái*/
+    .trangbaiviet > .phanthan > aside > a {
+        font-size: 1.5em;
+    }
+
+    .trangbaiviet > .phanthan > aside > .baivietlienquan > p {
+        font-size: 1.4em;
+    }
+
+    /*Bài viết liên quan*/
+    .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a {
+        font-family: Roboto-Regular;
+        font-size: 1.3em;
+        color: rgb(100, 100, 100);
+        text-decoration: none;
+        transition: all .3s;
+    }
+
+        .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a > img {
+            width: 100%;
+            margin: 0.5em 0 1em 0;
+        }
+
+    /*Dự án tiêu biêủ*/
+    .trangbaiviet > .proj > .khung > div > a {
+        font-size: 1.3em;
+    }
+
+        .trangbaiviet > .proj > .khung > div > a > img {
+            margin: 0 0 1em 0;
+            width: 100%;
+        }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Bài viết liên quan*/
+    .trangbaiviet > .phanthan > aside > .baivietlienquan {
+        border-top: none;
+        border-bottom: none;
+    }
+
+        .trangbaiviet > .phanthan > aside > .baivietlienquan > p {
+            font-size: 1.6em;
+            color: rgb(100, 100, 100);
+            border-top: solid 2px rgb(100, 100, 100);
+            border-bottom: solid 2px rgb(100, 100, 100);
+            width: 40%;
+            left: 30%;
+        }
+
+    /*Phần bài viết*/
+    .trangbaiviet > .phanthan > article {
+    }
+
+        .trangbaiviet > .phanthan > article > .tieude {
+            font-family: Roboto-Regular;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(100, 100, 100);
+            border-top: solid 2px rgb(100, 100, 100);
+            border-bottom: solid 2px rgb(100, 100, 100);
+            width: 90%;
+            left: 5%;
+            padding: 0.2em 0;
+            margin: 0.5em 0;
+        }
+
+        .trangbaiviet > .phanthan > article > .noidung {
+            font-family: Roboto-Light;
+            font-size: 1.5em;
+            text-align: justify;
+            line-height: 1.7em;
+        }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .trangbaiviet > .phanthan {
+        margin: 1em 0 0 0;
+    }
+
+        /*Phần bài viết*/
+        .trangbaiviet > .phanthan > article {
+        }
+
+            .trangbaiviet > .phanthan > article > .tieude {
+                font-family: Roboto-Regular;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                color: rgb(100, 100, 100);
+                border-top: solid 2px rgb(100, 100, 100);
+                border-bottom: solid 2px rgb(100, 100, 100);
+                width: 90%;
+                left: 5%;
+                padding: 0.2em 0;
+                margin: 0.5em 0;
+            }
+
+            .trangbaiviet > .phanthan > article > .noidung {
+                font-family: Roboto-Light;
+                font-size: 1.2em;
+                text-align: justify;
+                line-height: 1.7em;
+            }
+
+        /*Bài viết liên quan*/
+        .trangbaiviet > .phanthan > aside > .baivietlienquan {
+            border-top: none;
+            border-bottom: none;
+            padding: 2em 0 0 0;
+        }
+
+            .trangbaiviet > .phanthan > aside > .baivietlienquan > p {
+                font-size: 1.5em;
+                border-top: solid 2px rgb(100, 100, 100);
+                border-bottom: solid 2px rgb(100, 100, 100);
+                width: 80%;
+                left: 10%;
+                padding: 0.2em 0;
+            }
+
+            .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung {
+            }
+
+                .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div {
+                }
+
+                    .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a {
+                        font-size: 1em;
+                    }
+
+                        .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a:hover {
+                        }
+
+                        .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a > img {
+                            height: 5em;
+                        }
+}

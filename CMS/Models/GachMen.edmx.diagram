@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="74c7f0ec3bc64bceb88af1c22ceb9b71" Name="Diagram1" ZoomLevel="76">
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Banner" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Category" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.CategoryProduct" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Contact" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Image" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Order" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Post" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Product" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.User" Width="1.5" PointX="7" PointY="0.875" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.Video" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.webpages_Membership" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.webpages_OAuthMembership" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="GachMenLongKhanhModel.webpages_Roles" Width="1.5" PointX="4.75" PointY="0.875" />
+        <AssociationConnector Association="GachMenLongKhanhModel.FK_Category_Category" />
+        <AssociationConnector Association="GachMenLongKhanhModel.FK_CategoryProduct_CategoryProduct" />
+        <AssociationConnector Association="GachMenLongKhanhModel.webpages_UsersInRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

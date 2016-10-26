@@ -1,0 +1,129 @@
+﻿@model CMS.Models.Product
+@{
+    ViewBag.Title = @Model.title;
+}
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 left">
+    @Html.Partial("_TinTucAll")
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 right chiTietSP" ng-controller="productController">
+    <input type="hidden" value="@Model.idProduct" id="idProduct" />
+    <p class="tenSP">{{product.title}}</p>
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 left">
+        <img ng-src="{{product.image}}" class="img-responsive" />
+    </div>
+
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 right">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">MÃ SẢN PHẨM</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.idProduct}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">NƠI SẢN XUẤT</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.noiSX}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">TRỌNG LƯỢNG</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.trongLuong}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">VẬT LIỆU ĐÓNG GÓI</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.vatLieuDongGoi}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">TÌNH TRẠNG</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.tinhTrang == 1 ? 'Còn hàng' : 'Hết hàng'}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thuocTinh">
+            <p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tinhChat">ĐƠN GIÁ</p>
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 thongSo">:{{product.price | number:0}}<span class="" ng-class="{'hidden':product.price == null}"> đ</span>{{product.price == null ? 'Liên hệ' : ''}}</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datHang">
+            <div class="col-md-4"></div>
+            <a class="them" data-toggle="modal" data-target="#datHang" href="#"><span class="fa fa-cart-plus"></span> Đặt hàng</a>
+            @*<div class="col-md-4"></div>*@
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 moTa">
+        <p class="tieuDe">MÔ TẢ SẢN PHẨM</p>
+        <div class="noiDung" ng-bind-html="product.content"></div>
+    </div>
+</div>
+
+<!-- Đăng ký sản phẩm -->
+<div id="datHang" class="modal fade" role="dialog" ng-controller="themOrderController">
+    <input type="hidden" value="@Model.idProduct" id="idProductCurrent" />
+    <input type="hidden" value="@Model.idCategoryProduct" id="idCategoryProduct" />
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#109917">
+                <button type="button" class="close" data-dismiss="modal" style="color:#fff; border:0;">&times;</button>
+                <p class="modal-title" style="color:#fff;">Đặt hàng sản phẩm @Model.title</p>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form" role="form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group  " style="display:flex">
+                                            <label for="title" style="width:30%; float:left;">Họ tên</label>
+                                            <input type="text" style="width:70%; float:right;" class="form-control" id="hoTen" name="hoTen" ng-model="order.hoTen">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group  " style="display:flex">
+                                            <label for="title" style="width:30%; float:left;">Địa Chỉ</label>
+                                            <input type="text" style="width:70%; float:right;" class="form-control" id="diaChi" name="diaChi" ng-model="order.diaChi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group  " style="display:flex" ng-class="{'has-error':!order.SDT, 'has-success':order.SDT}">
+                                            <label for="title" style="width:30%; float:left;">Số điện thoại *</label>
+                                            <input type="text" style="width:70%; float:right;" class="form-control" id="SDT" name="SDT" ng-model="order.SDT">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group  " style="display:flex">
+                                            <label for="title" style="width:30%; float:left;">Email</label>
+                                            <input type="email" style="width:70%; float:right;" class="form-control" id="email" name="email" ng-model="order.email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group  " style="display:flex" ng-class="{'has-error':!order.sanPham, 'has-success':order.sanPham}">
+                                            <label for="title" style="width:30%; float:left;">Sản phẩm *</label>
+                                            <input type="text" value="@Model.title" style="width:70%; float:right;" class="form-control" id="tour" name="tour" ng-model="order.sanPham" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group  " style="display:flex">
+                                            <label for="title" style="width:60%; float:left;">Số lượng</label>
+                                            <input type="number" style="width:40%; float:right;" class="form-control" id="guestNumber" name="guestNumber" ng-model="order.soLuong">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group  " style="display:flex">
+                                            <label for="title" style="width:30%; float:left;">Thành tiền</label>
+                                            <input type="number" style="width:70%; float:right;" class="form-control" id="guestNumber" name="guestNumber" value="{{price*order.soLuong}}" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="SaveOrder()" style="border:0; background-color:#109917; color:#fff;">Đặt hàng</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Gợi ý thêm sản phẩm-->
+@Html.Partial("_SanPham")
