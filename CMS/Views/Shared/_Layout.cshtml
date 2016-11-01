@@ -158,9 +158,9 @@
                     <a href="#"><img src="~/Content/Front/Image/header-footer/twitter-icon.png" alt="" /></a>
                 </div>
                 <!--Ô tìm kiếm-->
-                <div class="search">
-                    <input type="text" placeholder="Nhập để tìm kiếm" value="" />
-                    <a href="#"><img src="~/Content/Front/Image/header-footer/search-icon.png" alt="" /></a>
+                <div class="search" ng-controller="searchController">
+                    <input type="text" placeholder="Nhập để tìm kiếm" ng-keypress="($event.which === 13)?search():0" ng-model="searchText" />
+                    <a  ng-click="search()"><img src="~/Content/Front/Image/header-footer/search-icon.png" alt="" /></a>
                 </div>
             </div>
         </div>
