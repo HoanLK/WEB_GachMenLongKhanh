@@ -69,6 +69,7 @@ header {
             list-style: none;
             text-align: right;
             margin: 0;
+            padding: 0;
         }
 
             header > .desktop > ul > li {
@@ -130,19 +131,54 @@ header {
                         }
 
         /*Nút tìm kiếm*/
-        header > .desktop > a {
-            border-right: 2px solid rgb(255, 255, 255);
-            border-left: 2px solid rgb(255, 255, 255);
-            width: 2.5em;
-            padding: 0;
-            margin: 3.5em 0em 0em 0em;
-            text-align: center;
+        header > .desktop > .search {
         }
 
-            header > .desktop > a > img {
-                margin: 0em 0.3em;
-                width: 1.5em;
+            header > .desktop > .search > a {
+                font-size: 1.5em;
+                color: rgb(255, 255, 255);
+                padding: 0;
+                margin: 1.3em 0em 0em 0;
+                text-align: left;
+                text-decoration: none;
+                width: 3em;
+                height: 2.85em;
+                padding: 1em 1em;
             }
+
+                header > .desktop > .search > a:hover {
+                    background: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                }
+
+            header > .desktop > .search > div {
+                position: absolute;
+                z-index: 10;
+                margin: 6.2em 0 0 0;
+                right: 9.8em;
+                background: rgba(0, 0, 0, .6);
+                width: 30em;
+                height: 3em;
+                border-radius: 0 0 5px 5px;
+                padding: 0.2em 0 0 1em;
+                display: none;
+            }
+
+                header > .desktop > .search > div > input {
+                    font-style: italic;
+                    border-radius: 5px;
+                    border: 1px solid rgb(255, 255, 255);
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                    padding: 0.3em;
+                    width: 25em;
+                    margin: 0 0.5em 0 0;
+                }
+
+                header > .desktop > .search > div > a {
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5em;
+                    text-decoration: none;
+                }
 
 footer {
     background: rgb(49, 49, 49);
@@ -263,7 +299,7 @@ footer {
 
             /*Phần nhập thông tin liên hệ*/
             footer > .contact > .info > div {
-                margin: 3em 0em 0em 0em;
+                margin: 3.5em 0em 0em 0em;
                 height: 1%;
                 overflow: hidden;
             }
@@ -278,20 +314,34 @@ footer {
                         width: 100%;
                         height: 2em;
                         font-style: italic;
+                        border-radius: 5px;
+                        border: 1px solid rgb(255, 255, 255);
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                        padding: 15px 15px;
                     }
 
                     footer > .contact > .info > div > div > button {
                         color: rgb(51, 36, 30);
                         width: 100%;
                         height: 2em;
-                        font-size: 1em;
+                        font-size: 1.5em;
                         font-family: Roboto-Bold;
+                        background: rgb(100, 177, 196) 0 0;
+                        border-color: rgba(255, 255, 255, .15);
+                        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+                        color: rgb(255, 255, 255);
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                        border-radius: 5px;
                     }
 
                 footer > .contact > .info > div > textarea {
                     color: rgb(51, 36, 30);
-                    height: 10.4em;
+                    height: 12.2em;
                     font-style: italic;
+                    border-radius: 5px;
+                    border: 1px solid rgb(255, 255, 255);
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                    padding: 15px 15px;
                 }
 
 /*Giao diện cho màn hình lớn*/
@@ -314,12 +364,13 @@ footer {
     /*Menu*/
     header > .desktop > ul {
         padding: 0;
-        margin: -2em 0em 0em 10em;
-        width: 50.5em;
+        margin: -2em 0em 0em 6em;
+        width: 50em;
     }
 
         header > .desktop > ul > li {
             margin: 0;
+            font-size: 1.4em;
         }
 
             header > .desktop > ul > li > a {
@@ -335,9 +386,51 @@ footer {
             }
 
     /*Nút tìm kiếm*/
-    header > .desktop > a {
-        margin: -2em 0em 0em 60em;
-    }
+    header > .desktop > .search {
+        }
+
+            header > .desktop > .search > a {
+                font-size: 1.2em;
+                padding: 0;
+                margin: 0;
+                width: 0;
+                height: 2.5em;
+                padding: 0;
+            }
+
+                header > .desktop > .search > a:hover {
+                    background: none;
+                    color: none;
+                }
+
+            header > .desktop > .search > div {
+                position: absolute;
+                z-index: 10;
+                margin: 6.2em 0 0 0;
+                right: 9.8em;
+                background: rgba(0, 0, 0, .6);
+                width: 30em;
+                height: 3em;
+                border-radius: 0 0 5px 5px;
+                padding: 0.2em 0 0 1em;
+                display: none;
+            }
+
+                header > .desktop > .search > div > input {
+                    font-style: italic;
+                    border-radius: 5px;
+                    border: 1px solid rgb(255, 255, 255);
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                    padding: 0.3em;
+                    width: 25em;
+                    margin: 0 0.5em 0 0;
+                }
+
+                header > .desktop > .search > div > a {
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5em;
+                    text-decoration: none;
+                }
 
     footer {
         padding: 4em 2em 2em 2em;
@@ -362,7 +455,7 @@ footer {
             footer > .contact > .info {
                 width: 100%;
                 padding: 0;
-                background: url(../images/header-footer/logo-co.png) no-repeat;
+                background: url(../Image/header-footer/logo-co.png) no-repeat;
                 background-size: 25%;
                 background-position-x: 3em;
                 background-position-y: 2em;
@@ -436,7 +529,7 @@ footer {
                 }
 
             .dl-menuwrapper div .search {
-                background: url(../images/header-footer/search-icon.png) no-repeat;
+                background: url(../Image/header-footer/search-icon.png) no-repeat;
                 width: 5%;
                 height: 100%;
                 position: absolute;
@@ -800,6 +893,7 @@ All this is done for any sub-level being entered.
 
     header {
         position: static;
+        z-index: 99;
     }
 
     .dl-menuwrapper {
@@ -813,7 +907,7 @@ All this is done for any sub-level being entered.
         perspective-origin: 50% 200%;
         box-shadow: 0 3px 3px rgba(132,136,138,.1);
         background: rgb(51, 36, 30);
-        z-index: 2;
+        z-index: 2000;
     }
 
         .dl-menuwrapper:first-child {
@@ -837,7 +931,7 @@ All this is done for any sub-level being entered.
                 }
 
             .dl-menuwrapper div .search {
-                background: url(../images/header-footer/search-icon.png) no-repeat;
+                background: url(../Image/header-footer/search-icon.png) no-repeat;
                 width: 1.8em;
                 height: 100%;
                 position: absolute;

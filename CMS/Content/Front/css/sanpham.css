@@ -141,7 +141,6 @@
             /*Nút xem thêm*/
             .sanpham > .cacmucsanpham > div > a {
                 width: 20%;
-                left: 40%;
             }
 }
 
@@ -181,8 +180,9 @@
 
     /*Nút xem thêm*/
     .sanpham > .cacmucsanpham > div > a {
-        width: 26%;
-        left: 37%;
+        width: 30%;
+        left: 35%;
+        float: left;
     }
 }
 
@@ -236,8 +236,9 @@
                 /*Nút xem thêm*/
                 .sanpham > .cacmucsanpham > div > a {
                     font-size: 1.2em;
-                    width: 50%;
-                    left: 25%;
+                    width: 40%;
+                    left: 30%;
+                    float: left;
                     padding: 0.5em 1em;
                     margin: 1.5em 0 1em 0;
                 }

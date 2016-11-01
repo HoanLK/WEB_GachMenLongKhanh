@@ -12,7 +12,7 @@
     <meta name="revisit-after" content="1 days" />
     <meta name="robots" content='@((ViewBag.Robots!=null)?ViewBag.Robots:"index, noop, follow")' />
     <meta http-equiv="content-language" content="vi" />
-    <link href="~/Content/Front/Image/header-footer/logo-co.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/Front/Image/header-footer/logo.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="alternate" href="" hreflang="vi" />
 
     <meta itemprop="name" content='@((ViewBag.Title!=null)?ViewBag.Title : "")'>
@@ -40,9 +40,7 @@
     <link href="~/Content/Front/css/BaiViet.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/chitietsanpham.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/header-footer.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/index-1.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/index.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/loaisanpham-1.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/loaisanpham.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/SanPham.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/tuvan.min.css" rel="stylesheet" />
@@ -53,6 +51,7 @@
             z-index: 1;
         }
     </style>
+    <script src="~/Scripts/front/modernizr.custom.js"></script>
 </head>
 <body ng-app="frontApp">
     <header>
@@ -75,7 +74,13 @@
                 <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
             </ul>
             <!--Nút tìm kiếm-->
-            <a href="#" class="col-md-1 col-lg-1"><img src="~/Content/Front/Image/header-footer/search-icon.png" alt="" /></a>
+            <div class="search">
+                <a href="#" id="button" class="button col-md-1 col-lg-1 fa fa-search"></a>
+                <div id="search-box" ng-controller="searchController">
+                    <input type="text" placeholder="Nhập thông tin cần tìm kiếm...." ng-keypress="($event.which === 13)?search():0" ng-model="searchText"/>
+                    <a href="#" class="fa fa-search" ng-click="search()"></a>
+                </div>
+            </div>
         </div>
 
         <!--Giao diện menu trên điện thoại-->
@@ -86,7 +91,7 @@
                     <a href="@Url.Action("Index","Home")" class="logo"><img src="~/Content/Front/Image/header-footer/logo-co.png" alt="" /></a>
                     <a href="#" class="search">"Tìm kiếm"</a>
                 </div>
-                <ul class="dl-menu">
+                <ul class="dl-menu" style="z-index:2;">
                     <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
                     <li>
                         <a href="/danh-muc-san-pham">Sản phẩm</a>
@@ -190,8 +195,9 @@
     @*<script src="~/Scripts/jquery-3.1.1.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>*@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    @*<script src="~/Scripts/modernizr-2.8.3.js"></script>*@
 
     <!--AngularJS-->
     @*<script src="~/Scripts/angular.min.js"></script>*@
@@ -199,25 +205,6 @@
     @*<script src="~/Scripts/angular-sanitize.min.js"></script>*@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.js"></script>
     <script src="~/Scripts/angular-cookies.min.js"></script>
-
-    <script>
-        $(function () {
-
-            $(window).bind('scroll', function () {
-                var navHeight = $('.mobile').height();
-                if ($(window).scrollTop() > navHeight) {
-                    $('#dl-menu').addClass('fixed');
-                }
-                else {
-                    $('#dl-menu').removeClass('fixed');
-                }
-            });
-
-            $('#dl-menu').dlmenu({
-                animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' }
-            });
-        });
-    </script>
 
     <!--Message-->
     <script src="~/Content/admin/js/libs/toastr/toastr.min.js"></script>
@@ -234,7 +221,9 @@
     <script src="~/Scripts/Front/pagination/dirPagination.min.js"></script>
 
     <script src="~/Scripts/front/jquery.dlmenu.min.js"></script>
+    <script src="~/Scripts/front/trangchu.min.js"></script>
     <script src="~/Scripts/front/loaisanpham.min.js"></script>
+    <script src="~/Scripts/front/header-footer.min.js"></script>
 
     <!--Banner-->
     <script src="~/Scripts/Front/bannerController.min.js"></script>
@@ -271,5 +260,24 @@
     <!--Search-->
     <script src="~/Scripts/Front/searchController.min.js"></script>
     <script src="~/Scripts/Front/showSearchController.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $(window).bind('scroll', function () {
+                var navHeight = $('.mobile').height();
+                if ($(window).scrollTop() > navHeight) {
+                    $('#dl-menu').addClass('fixed');
+                }
+                else {
+                    $('#dl-menu').removeClass('fixed');
+                }
+            });
+
+            $('#dl-menu').dlmenu({
+                animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' }
+            });
+        });
+    </script>
 </body>
 </html>

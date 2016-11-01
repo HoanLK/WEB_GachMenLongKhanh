@@ -2252,17 +2252,9 @@
       <DependentUpon>chitietsanpham.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\css\header-footer.css" />
-    <Content Include="Content\Front\css\index-1.css" />
-    <Content Include="Content\Front\css\index-1.min.css">
-      <DependentUpon>index-1.css</DependentUpon>
-    </Content>
     <Content Include="Content\Front\css\index.css" />
     <Content Include="Content\Front\css\index.min.css">
       <DependentUpon>index.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Front\css\loaisanpham-1.css" />
-    <Content Include="Content\Front\css\loaisanpham-1.min.css">
-      <DependentUpon>loaisanpham-1.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\css\loaisanpham.css" />
     <Content Include="Content\Front\css\loaisanpham.min.css">
@@ -2301,6 +2293,7 @@
     <Content Include="Content\Front\Image\loaisanpham\ico-googleplus.png" />
     <Content Include="Content\Front\Image\loaisanpham\ico-twitter.png" />
     <Content Include="Content\Front\Image\loaisanpham\ico-youtube.png" />
+    <Content Include="Content\Front\Image\header-footer\logo.png" />
     <Content Include="Content\Front\Image\sanpham\banner-bg.png" />
     <Content Include="Content\Front\Image\sanpham\gachmen-1.png" />
     <Content Include="Content\Front\Image\sanpham\gachmen-2.png" />
@@ -2528,6 +2521,10 @@
     <Content Include="Scripts\front\frontApp.min.js">
       <DependentUpon>frontApp.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\front\header-footer.js" />
+    <Content Include="Scripts\front\header-footer.min.js">
+      <DependentUpon>header-footer.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\imageController.js" />
     <Content Include="Scripts\front\imageController.min.js">
       <DependentUpon>imageController.js</DependentUpon>
@@ -2540,12 +2537,16 @@
     <Content Include="Scripts\front\loaisanpham.min.js">
       <DependentUpon>loaisanpham.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\front\modernizr.custom.min.js">
+      <DependentUpon>modernizr.custom.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\pagination\dirPagination.js" />
     <Content Include="Scripts\front\pagination\dirPagination.min.js">
       <DependentUpon>dirPagination.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\pagination\dirPagination.spec.js" />
     <Content Include="Scripts\front\pagination\dirPagination.tpl.html" />
+    <Content Include="Scripts\front\modernizr.custom.js" />
     <Content Include="Scripts\front\pagination\testTemplate.tpl.html" />
     <Content Include="Scripts\front\postController.js" />
     <Content Include="Scripts\front\postController.min.js">
@@ -2566,6 +2567,10 @@
     <Content Include="Scripts\front\themOrderController.js" />
     <Content Include="Scripts\front\themOrderController.min.js">
       <DependentUpon>themOrderController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\front\trangchu.js" />
+    <Content Include="Scripts\front\trangchu.min.js">
+      <DependentUpon>trangchu.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\videoController.js" />
     <Content Include="Scripts\front\videoController.min.js">

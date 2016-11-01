@@ -526,5 +526,23 @@
     "inputFiles": [
       "Scripts/front/imageController.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/front/modernizr.custom.min.js",
+    "inputFiles": [
+      "Scripts/front/modernizr.custom.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/trangchu.min.js",
+    "inputFiles": [
+      "Scripts/front/trangchu.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/header-footer.min.js",
+    "inputFiles": [
+      "Scripts/front/header-footer.js"
+    ]
   }
 ]

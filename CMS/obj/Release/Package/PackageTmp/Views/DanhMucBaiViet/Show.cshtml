@@ -47,18 +47,19 @@
                 </div>
 
             </div>
+        </div>
 
-            <!--Công trình tiêu biểu-->
-            <div class="baivietlienquan col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">công trình tiêu biểu</p>
-                <div class="khung col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="proj-1 col-xs-6 col-sm-3 col-md-3 col-lg-3" dir-paginate="(index, value) in congTrinhTieuBieus | itemsPerPage:4">
-                        <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
-                            <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
-                            {{value.title}}
-                        </a>
-                    </div>
+        <!--Công trình tiêu biểu-->
+        <div class="baivietlienquan col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">công trình tiêu biểu</p>
+            <div class="khung col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="proj-1 col-xs-6 col-sm-3 col-md-3 col-lg-3" dir-paginate="(index, value) in congTrinhTieuBieus | itemsPerPage:4">
+                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+                        <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
+                        {{value.title}}
+                    </a>
                 </div>
             </div>
+        </div>
     </article>
 </section>

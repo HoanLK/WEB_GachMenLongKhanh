@@ -38,7 +38,7 @@ $(document).ready(function () {
             $("#main").css("display", "none");
             var srcCurrent = $(this).find("img").attr("src");
             $("#main").attr("src", srcCurrent);
-            $("#main").fadeIn();
+            $("#main").toggle("slide", { direction: "right" }, 500);
         }
     });
 });
