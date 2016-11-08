@@ -2244,9 +2244,6 @@
     <Content Include="Content\Front\css\BaiViet.min.css">
       <DependentUpon>baiviet.css</DependentUpon>
     </Content>
-    <Content Include="Content\Front\css\BaiViet.min.min.css">
-      <DependentUpon>BaiViet.min.css</DependentUpon>
-    </Content>
     <Content Include="Content\Front\css\chitietsanpham.css" />
     <Content Include="Content\Front\css\chitietsanpham.min.css">
       <DependentUpon>chitietsanpham.css</DependentUpon>
@@ -2335,6 +2332,7 @@
     <Content Include="Content\Front\Image\tuvan\baivietlienquan-3.png" />
     <Content Include="Content\Front\Image\tuvan\baivietlienquan-4.png" />
     <Content Include="Content\Front\Image\tuvan\banner-bg.png" />
+    <Content Include="Content\Front\Image\tuvan\border.png" />
     <Content Include="Content\Images\_thumbs\Images\Banner\Banner-min.png" />
     <Content Include="Content\Images\_thumbs\Images\San pham\1kg\1000.jpg" />
     <Content Include="Content\Images\_thumbs\Images\San pham\200gr\200.jpg" />
@@ -2617,8 +2615,6 @@
     <Content Include="Areas\Admin\Views\Contacts\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Contacts\Index.cshtml" />
     <Content Include="Views\Shared\_MenuLeft.cshtml" />
-    <Content Include="Views\Shared\_SanPham.cshtml" />
-    <Content Include="Views\Shared\_TinTucAll.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

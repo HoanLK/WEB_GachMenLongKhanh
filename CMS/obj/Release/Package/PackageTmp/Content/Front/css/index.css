@@ -392,57 +392,68 @@
             margin: 1em 0 0 0;
         }
 
-    /*Công trình tiêu biểu*/
+    /*Dự án tiêu biêủ*/
     .index > .proj {
+        margin: 1em 0;
         padding: 0;
-        width: 94%;
-        left: 3%;
-        margin: 0 0 3em 0;
     }
 
         .index > .proj > p {
-            text-align: center;
-            font-family: Roboto-Bold;
+            font-family: Roboto-Black;
             font-size: 2em;
+            color: rgb(12, 123, 7);
             text-transform: uppercase;
-            margin: 0 0 1em 0;
+            text-align: center;
+            width: 30%;
+            left: 35%;
+            padding: 0.3em 0;
+            margin: 1em 0;
+            border-top: solid 2px rgb(12, 123, 7);
+            border-bottom: solid 2px rgb(12, 123, 7);
         }
 
         .index > .proj > div {
         }
 
-        .index > .proj > .proj-1 {
-            padding-left: 0;
-        }
-
-        .index > .proj > .proj-2 {
-            padding: 0 0.5em 0 0;
-        }
-
-        .index > .proj > .proj-3 {
-            padding: 0 0 0 0.5em;
-        }
-
-        .index > .proj > .proj-4 {
-            padding-right: 0;
-        }
-
-        .index > .proj > div > a {
-            font-family: Roboto-Bold;
-            font-size: 1.2em;
-            color: rgb(51, 51, 51);
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-            .index > .proj > div > a:hover {
+            .index > .proj > div > .well {
             }
 
-            .index > .proj > div > a > img {
-                width: 100%;
-                height: 10em;
-                margin: 0 0 1em 0;
-            }
+                .index > .proj > div > .well > div {
+                }
+
+                    /*Phần ảnh*/
+                    .index > .proj > div > .well > div > .pic {
+                    }
+
+                        .index > .proj > div > .well > div > .pic > .item {
+                        }
+
+                            .index > .proj > div > .well > div > .pic > .item > div {
+                            }
+
+                                .index > .proj > div > .well > div > .pic > .item > div > div {
+                                }
+
+                                    .index > .proj > div > .well > div > .pic > .item > div > div > a {
+                                        text-align: center;
+                                        font-family: Roboto-Regular;
+                                        font-size: 1.3em;
+                                        color: rgba(0, 0, 0, .6);
+                                        text-decoration: none;
+                                        margin: 0;
+                                    }
+
+                                        .index > .proj > div > .well > div > .pic > .item > div > div > a > img {
+                                            width: 100%;
+                                            height: 15em;
+                                        }
+
+                    /*Nút chuyển*/
+                    .index > .proj > div > .well > div > a {
+                        width: 1.5em;
+                        font-size: 5em;
+                        padding: 1.5em 0;
+                    }
 
 /*Giao diện cho màn hình lớn*/
 @media (min-width: 1400px) {
@@ -874,6 +885,7 @@
             .index > .prod-vis > .prod > div {
                 width: 24%;
                 margin: 0 0.5%;
+                display: block;
             }
 
                 .index > .prod-vis > .prod > div > a {
@@ -903,6 +915,7 @@
             height: 40em;
             width: 99%;
             margin: 0 0.5%;
+            display: block;
         }
 
             .index > .prod-vis > .vis > p {
@@ -921,6 +934,7 @@
         height: 1%;
         overflow: hidden;
         margin: 0 0 3em 0;
+        opacity: 1;
     }
 
         /*Tư vấn*/
@@ -1049,6 +1063,7 @@
         width: 96%;
         left: 2%;
         margin: 0 0 10em 0;
+        opacity: 1;
     }
 }
 
@@ -1091,6 +1106,7 @@
                 width: 100%;
                 height: 30em;
                 margin: 0em 0 1em 0em;
+                display: block;
             }
 
                 .index > .prod-vis > .prod > div > img {
@@ -1109,6 +1125,7 @@
         /*Tầm nhìn*/
         .index > .prod-vis > .vis {
             height: 1%;
+            display: block;
         }
 
             .index > .prod-vis > .vis > p {
@@ -1131,6 +1148,7 @@
         height: 1%;
         overflow: hidden;
         margin: 0 0 3em 0;
+        opacity: 1;
     }
 
         /*Tư vấn*/
@@ -1213,13 +1231,13 @@
                     margin: 0 0 1em 0;
                 }
 
-                .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .tut > a {
-                    width: 80%;
-                    left: 10%;
-                }
-
-                    .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .tut > a:hover {
+                    .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .tut > a {
+                        width: 80%;
+                        left: 10%;
                     }
+
+                        .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .tut > a:hover {
+                        }
 
             /*Khách hàng*/
             .index > .sui-spa-tut-cus > .spa-tut-cus > .cus {
@@ -1254,6 +1272,7 @@
     .index > .news {
         height: 1%;
         overflow: hidden;
+        opacity: 1;
     }
 
         .index > .news > div {
@@ -1279,33 +1298,4 @@
                 margin: 0 0 2em 0;
                 text-align: justify;
             }
-
-    /*Công trình tiêu biểu*/
-    .index > .proj {
-        height: 1%;
-        overflow: hidden;
-    }
-
-        .index > .proj > p {
-            font-size: 1.8em;
-        }
-
-        .index > .proj > div {
-            padding: 0;
-            text-align: center;
-        }
-
-            .index > .proj > div > a {
-                font-size: 1em;
-                text-align: center;
-            }
-
-                .index > .proj > div > a:hover {
-                }
-
-                .index > .proj > div > a > img {
-                    width: 90%;
-                    height: 10em;
-                    margin: 0 0 1em 0;
-                }
 }

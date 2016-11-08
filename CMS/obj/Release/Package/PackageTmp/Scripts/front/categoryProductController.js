@@ -39,28 +39,28 @@
                 if (value.idCategoryProduct == $scope.idCategoryProduct) {
                     $scope.products.push(value);
                 }
-            });
-            angular.forEach(data, function (value, key) {
+
+                //Sản phẩm nổi bật
                 if (value.feature == '1') {
                     $scope.spNoiBats.push(value);
                 }
-            });
-            angular.forEach(data, function (value, key) {
+
+                //Gạch men
                 if (value.idCategoryProduct == 2) {
                     $scope.gachMens.push(value);
                 }
-            });
-            angular.forEach(data, function (value, key) {
+
+                //Thiết bị vệ sinh
                 if (value.idCategoryProduct == 3) {
                     $scope.thietBiVeSinhs.push(value);
                 }
-            });
-            angular.forEach(data, function (value, key) {
+
+                //Thiết bị nhà tắm
                 if (value.idCategoryProduct == 4) {
                     $scope.thietBiNhaTams.push(value);
                 }
-            });
-            angular.forEach(data, function (value, key) {
+
+                //Tranh 3D
                 if (value.idCategoryProduct == 5) {
                     $scope.tranh3Ds.push(value);
                 }

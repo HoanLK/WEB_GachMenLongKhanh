@@ -1,8 +1,19 @@
-﻿<!--Danh mục sản phẩm-->
-<div class="sanPham" ng-controller="categoryProductController">
-    <input type="hidden" value="1" id="idCategoryProduct" />
-    <a href="/danh-muc-san-pham" style="display:block" class="tieuDe">SẢN PHẨM</a>
-    <ul class="list">
-        <li class="item" ng-repeat="(index, value) in products"><a href="/san-pham/{{value.alias}}-{{value.idProduct}}">{{value.title}}</a></li>
-    </ul>
-</div>
+﻿<aside class="desktop hidden-xs hidden-sm col-md-3 col-lg-3">
+    <div class="sidebar col-md-12 col-lg-12">
+        <a href="/danh-muc-san-pham" class="line-1 col-md-12 col-lg-12">Sản phẩm</a>
+        <a href="/danh-mua-bai-viet/khong-gian-dep-3" class="line-2 col-md-12 col-lg-12">Không gian đẹp</a>
+    </div>
+
+    <!--Bài viết liên quan-->
+    <div class="baivietlienquan col-md-12 col-lg-12" @*ng-controller="categoryPostController"*@>
+        <p class="col-md-12 col-lg-12">Bài viết liên quan</p>
+        <div class="khung col-md-12 col-lg-12">
+            <div class="col-md-12 col-lg-12" dir-paginate="(index, value) in baiVietTops | itemsPerPage:5">
+                <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
+                    {{value.title}}
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>

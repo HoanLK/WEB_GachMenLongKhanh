@@ -25,43 +25,23 @@
                 if (value.idCategory == $scope.idCategory) {
                     $scope.posts.push(value);
                 }
-            });
-        });
 
-    //Lấy bài viết lên top
-    $http.get('/API/PostsAPI/')
-        .success(function (data) {
-            angular.forEach(data, function (value, key) {
-                if (value.featured == 1 && value.idCategory==2) {
+                //Lấy bài viết lên top
+                if (value.featured == 1 && value.idCategory == 2) {
                     $scope.baiVietTops.push(value);
                 }
-            });
-        });
 
-    //Lấy bài viết mới nhất
-    $http.get('/API/PostsAPI/')
-        .success(function (data) {
-            angular.forEach(data, function (value, key) {
+                //Lấy bài viết mới nhất
                 if (value.idCategory == 2) {
                     $scope.baiVietNews.push(value);
                 }
-            });
-        });
 
-    //Lấy Khách hàng và đối tác
-    $http.get('/API/PostsAPI/')
-        .success(function (data) {
-            angular.forEach(data, function (value, key) {
+                //Lấy khách hàng & đối tác
                 if (value.idCategory == 6) {
                     $scope.khachHangDoiTacs.push(value);
                 }
-            });
-        });
 
-    //Lấy công trình tiêu biểu
-    $http.get('/API/PostsAPI/')
-        .success(function (data) {
-            angular.forEach(data, function (value, key) {
+                //Lấy công trình tiêu biểu
                 if (value.idCategory == 5) {
                     $scope.congTrinhTieuBieus.push(value);
                 }

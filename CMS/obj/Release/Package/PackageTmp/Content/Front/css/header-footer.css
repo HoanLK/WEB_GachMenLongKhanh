@@ -505,7 +505,7 @@ footer {
         perspective-origin: 50% 200%;
         box-shadow: 0 3px 3px rgba(132,136,138,.1);
         background: rgb(51, 36, 30);
-        z-index: 2;
+        z-index: 99;
     }
 
         .dl-menuwrapper:first-child {
