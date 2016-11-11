@@ -7,6 +7,8 @@ using CMS.Models;
 using CMS.Models.Account;
 using WebMatrix.WebData;
 using System.Web.Security;
+using BanHang.Models.Account;
+using System.Net;
 
 namespace CMS.Controllers
 {
@@ -62,6 +64,82 @@ namespace CMS.Controllers
             return View(register);
         }
 
+        //ChangePassword
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public ActionResult ChangePassword(int? id)
+        {
+            db.Configuration.AutoDetectChangesEnabled = false;
+            db.Configuration.LazyLoadingEnabled = false;
+            db.Configuration.ProxyCreationEnabled = false;
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var user = db.User.Find(id);
+            ChangePassword model = new ChangePassword();
+            model.Username = user.Username;
+            //model.Role = ;
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            //Load Default Data
+
+            return View(model);
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ChangePassword(ChangePassword changePassword)
+        {
+            if (ModelState.IsValid)
+            {
+                //Đổi mật khẩu
+                var token = WebSecurity.GeneratePasswordResetToken(changePassword.Username);
+
+                WebSecurity.ResetPassword(token, changePassword.Password);
+
+
+                db.SaveChanges();
+                return RedirectToAction("Index", "Account");
+            }
+
+
+            return View(changePassword);
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public ActionResult Edit(int? id)
+        {
+            db.Configuration.AutoDetectChangesEnabled = false;
+            db.Configuration.LazyLoadingEnabled = false;
+            db.Configuration.ProxyCreationEnabled = false;
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var user = db.User.Find(id);
+            Register model = new Register();
+            model.Username = user.Username;
+            //model.Name = user.Name;
+            //model.Role = ;
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            //Load Default Data
+            ViewBag.role = new SelectList(db.webpages_Roles, "RoleId", "RoleName", Roles.GetRolesForUser(user.Username)[0]);
+
+            return View(user);
+        }
+
         //Delete
         [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
@@ -87,7 +165,7 @@ namespace CMS.Controllers
         {
             if (WebSecurity.IsAuthenticated == true)
             {
-                return RedirectToAction("Index", "Orders", new { Area = "Admin" });
+                return RedirectToAction("Index", "Products", new { Area = "Admin" });
             }
 
             return View();
@@ -108,7 +186,7 @@ namespace CMS.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Orders", new { Area = "Admin" });
+                        return RedirectToAction("Index", "Products", new { Area = "Admin" });
                     }
                 }
                 else

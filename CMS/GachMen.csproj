@@ -189,7 +189,6 @@
     <Folder Include="Content\admin\js\core\cache\" />
     <Folder Include="Content\Images\files\" />
     <Folder Include="Content\Images\flash\" />
-    <Folder Include="Content\Images\images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -222,6 +221,7 @@
     <Compile Include="Controllers\DanhMucBaiVietController.cs" />
     <Compile Include="Controllers\LienHeController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
+    <Compile Include="Models\Account\ChangePassword.cs" />
     <Compile Include="Models\Account\Login.cs" />
     <Compile Include="Models\Account\Register.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -2333,7 +2333,69 @@
     <Content Include="Content\Front\Image\tuvan\baivietlienquan-4.png" />
     <Content Include="Content\Front\Image\tuvan\banner-bg.png" />
     <Content Include="Content\Front\Image\tuvan\border.png" />
+    <Content Include="Content\Images\images\BoSuuTap\bosuutap-2.png" />
+    <Content Include="Content\Images\images\BoSuuTap\bosuutap-3.png" />
+    <Content Include="Content\Images\images\BoSuuTap\bosuutap-4.png" />
+    <Content Include="Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-1.png" />
+    <Content Include="Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-2.png" />
+    <Content Include="Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-3.png" />
+    <Content Include="Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-4.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\banner-img.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\gachmen-1.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\gachmen-2.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\gachmen-3.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\gachmen-4.png" />
+    <Content Include="Content\Images\images\GachMenCaoCap\product-gachmen.png" />
+    <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 2.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 3.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 4.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 5.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khonggianphongtam1.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\Khong gian bep theo phong thuy\gạch bếp.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\mẹo nhỏ trong chọn gạch phòng bếp\phong bep.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\San nha theo phong thuy\gach-lat-nen-phong-khach 1.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\tuvan.png" />
+    <Content Include="Content\Images\images\KhachHang DoiTac\doitac-1.png" />
+    <Content Include="Content\Images\images\KhachHang DoiTac\doitac-2.png" />
+    <Content Include="Content\Images\images\KhachHang DoiTac\doitac-3.png" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach lat nen phong ngu\gach phong ngu.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian nha tam.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong khach.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong ngu.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong tam.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach mem cho khong gian nho\phong khach.JPG" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach mem cho khong gian nho\phong ngủ.jpg" />
+    <Content Include="Content\Images\images\Khong gian dep\Gach mem cho khong gian nho\phong tam nhỏ.jpg" />
+    <Content Include="Content\Images\images\ThietBiNhaTam\nhatam-1.png" />
+    <Content Include="Content\Images\images\ThietBiNhaTam\nhatam-2.png" />
+    <Content Include="Content\Images\images\ThietBiVeSinh\vesinh-1.png" />
+    <Content Include="Content\Images\images\ThietBiVeSinh\vesinh-2.png" />
+    <Content Include="Content\Images\images\Tranh3D\tranh3d-1.png" />
+    <Content Include="Content\Images\images\Tranh3D\tranh3d-2.png" />
     <Content Include="Content\Images\_thumbs\Images\Banner\Banner-min.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\banner-img.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-1.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-2.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-3.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-4.png" />
+    <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\product-gachmen.png" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 2.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 3.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 4.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 5.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khonggianphongtam1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\Khong gian bep theo phong thuy\gạch bếp.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\mẹo nhỏ trong chọn gạch phòng bếp\phong bep.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\San nha theo phong thuy\gach-lat-nen-phong-khach 1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\tuvan.png" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phong ngu\gach phong ngu.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian nha tam.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong khach.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong ngu.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong tam.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach mem cho khong gian nho\phong khach.JPG" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach mem cho khong gian nho\phong ngủ.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach mem cho khong gian nho\phong tam nhỏ.jpg" />
     <Content Include="Content\Images\_thumbs\Images\San pham\1kg\1000.jpg" />
     <Content Include="Content\Images\_thumbs\Images\San pham\200gr\200.jpg" />
     <Content Include="Content\Images\_thumbs\Images\San pham\400\400g.jpg" />
@@ -2931,6 +2993,7 @@
     <Content Include="Views\TimKiem\Index.cshtml" />
     <Content Include="Scripts\front\pagination\README.md" />
     <None Include="Properties\PublishProfiles\Up.pubxml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -2953,7 +3016,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53731</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5682/</IISUrl>
+          <IISUrl>http://localhost:5683/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

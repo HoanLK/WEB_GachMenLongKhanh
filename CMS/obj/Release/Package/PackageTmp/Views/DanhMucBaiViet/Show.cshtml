@@ -28,7 +28,8 @@
                 <!--Phần bài viết-->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <!--Bài viết-->
-                    <div class="baiviet col-xs-12 col-sm-12 col-md-12 col-lg-12" dir-paginate="(index, value) in posts | itemsPerPage:5">
+                    <!--Desktop + table-->
+                    <div class="baiviet col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs" dir-paginate="(index, value) in posts | itemsPerPage:5">
                         <!--Lẻ-->
                         <img ng-src="{{value.image}}" alt="{{value.title}}" ng-show="index%2==0" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" />
                         <div class="text col-xs-12 col-sm-7 col-md-7 col-lg-7" ng-show="index%2==0">
@@ -45,6 +46,17 @@
                         </div>
                         <img ng-src="{{value.image}}" alt="{{value.title}}" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" ng-show="index%2==1" />
                     </div>
+
+                    <!--Mobile-->
+                    <div class="baiviet col-xs-12 hidden-lg hidden-md hidden-sm" dir-paginate="(index, value) in posts | itemsPerPage:5">
+                        <!--Lẻ-->
+                        <img ng-src="{{value.image}}" alt="{{value.title}}" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" />
+                        <div class="text col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                            <p class="tieude col-xs-12 col-sm-12 col-md-12 col-lg-12">{{value.title}}</p>
+                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.content | limitTo: 300"></p>
+                            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!--Số trang-->
@@ -57,7 +69,7 @@
             <aside class="mobile col-xs-12 col-sm-12 hidden-md hidden-lg">
                 <div class="sidebar col-xs-12 col-sm-4">
                     <a href="/danh-muc-san-pham" class="line-1 col-xs-12 col-sm-12">Sản phẩm</a>
-                    <a href="/danh-mua-bai-viet/khong-gian-dep-3" class="line-2 col-xs-12 col-sm-12">Không gian đẹp</a>
+                    <a href="/danh-muc-bai-viet/khong-gian-dep-3" class="line-2 col-xs-12 col-sm-12">Không gian đẹp</a>
                 </div>
 
                 <!--Bài viết liên quan-->

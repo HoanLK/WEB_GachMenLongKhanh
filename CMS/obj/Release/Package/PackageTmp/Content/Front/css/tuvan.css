@@ -731,11 +731,11 @@
                         .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > img {
                             padding: 0;
                             width: 100%;
-                            display: none;
                         }
 
                         .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > .text {
                             padding: 2em 0;
+                            border:0px;
                         }
 
                             .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > .text > .tieude {

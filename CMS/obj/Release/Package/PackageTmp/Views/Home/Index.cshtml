@@ -89,13 +89,46 @@
             <p></p>
         </div>
     </div>
-    <div class="proj col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">công trình tiêu biểu</p>
-        <div class="proj-1 col-xs-6 col-sm-3 col-md-3 col-lg-3" dir-paginate="(index, value) in congTrinhTieuBieus | itemsPerPage:4">
-            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
-                <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
-                {{value.title}}
-            </a>
+
+    <div class="proj hidden-xs hidden-sm col-md-12 col-lg-12">
+        <p class="col-md-12 col-lg-12">công trình tiêu biểu</p>
+        <div class="col-md-12 col-lg-12 border-slide">
+            <div class="well">
+                <div id="myCarousel" class="carousel slide all">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner pic">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3 frame" dir-paginate="(index, value) in congTrinhTieuBieus | itemsPerPage:4">
+                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="thumbnail">
+                                        <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive"><br />
+                                        {{value.title}}
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-3" dir-paginate="(index, value) in congTrinhTieuBieus | itemsPerPage:4">
+                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="thumbnail">
+                                        <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive"><br />
+                                        {{value.title}}
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                    </div>
+                    <!--/carousel-inner-->
+                    <a class="left carousel-control footer-control" href="#myCarousel" data-slide="prev">‹</a>
+                    <a class="right carousel-control footer-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                <!--/myCarousel-->
+            </div>
+            <!--/well-->
         </div>
     </div>
 </div>
