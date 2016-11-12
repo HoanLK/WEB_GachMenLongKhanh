@@ -36,8 +36,7 @@
                 </div>
             </div>
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                Chúng tôi sản xuất và cung cấp một phạm vi rộng lớn các loại gạch men, đá cẩm thạch cao cấp, sang trọng và đầy đủ kích cỡ.
-                Được lấy cảm hứng từ sự sang trọng và quý phái, Gạch men Long Khánh luôn mang đến cho quý khách những sản phẩm tốt nhất, hoàn hảo nhất và chất lượng nhất.
+                @Model.description
             </p>
         </div>
         <article id="danhsachsanpham" class="danhsachsp col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -67,9 +66,9 @@
                 <div class="main col-xs-12 col-sm-7 col-md-7 col-lg-7"ng-show="images.length > 0">
                     <img id="main" ng-src="{{image}}" alt="" />
                 </div>
-                <div class="sub col-xs-12 col-sm-5 col-md-5 col-lg-5" dir-paginate="(index, value) in images | itemsPerPage:6">
-                    <div id="sub-1" class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sub">
-                        <img ng-click="load(value.anh)" ng-src="{{value.anh}}" alt="{{value.title}}" />
+                <div class="sub col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <div id="sub-1" class="col-xs-6 col-sm-12 col-md-6 col-lg-6 sub" dir-paginate="(index, value) in images | itemsPerPage:6">
+                        <img ng-click="load(value.anh)" ng-src="{{value.anh}}" alt="{{value.title}}" class="img-responsive"/>
                     </div>
                 </div>
             </div>

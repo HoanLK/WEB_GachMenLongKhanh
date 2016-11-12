@@ -92,7 +92,7 @@
 
                 .index > .prod-vis > .prod > div > .title {
                     color: rgb(74, 66, 69);
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 1.3em;
                     text-align: center;
                     margin: 0.5em 0em 0.3em 0em;
@@ -100,7 +100,7 @@
 
                 .index > .prod-vis > .prod > div > .content {
                     color: rgb(74, 66, 69);
-                    font-family: Roboto-Light;
+                    /*font-family: Roboto-Light;*/
                     text-align: justify;
                     padding: 0em 1em;
                 }
@@ -115,7 +115,7 @@
 
             .index > .prod-vis > .vis > p {
                 text-align: center;
-                font-family: Roboto-Black;
+                /*font-family: Roboto-Black;*/
                 font-size: 2.3em;
                 color: rgb(255, 255, 255);
                 text-shadow: 2.5px 1.5px 5px rgb(0, 0, 0);
@@ -124,7 +124,7 @@
 
             .index > .prod-vis > .vis > a {
                 text-align: center;
-                font-family: Roboto-Regular;
+                /*font-family: Roboto-Regular;*/
                 font-size: 1.3em;
                 color: rgb(255, 255, 255);
                 border-top: 2px solid rgb(255, 255, 255);
@@ -169,7 +169,7 @@
             }
 
                 .index > .sui-spa-tut-cus > .sui > .img > p {
-                    font-family: Roboto-Regular;
+                    /*font-family: Roboto-Regular;*/
                     color: rgb(255, 255, 255);
                     text-align: center;
                     margin: 0;
@@ -177,13 +177,13 @@
                 }
 
                     .index > .sui-spa-tut-cus > .sui > .img > p > span {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 2em;
                     }
 
                 .index > .sui-spa-tut-cus > .sui > .img > a {
                     text-align: center;
-                    font-family: Roboto-Regular;
+                    /*font-family: Roboto-Regular;*/
                     font-size: 1.3em;
                     color: rgb(255, 255, 255);
                     border-top: 2px solid rgb(255, 255, 255);
@@ -212,15 +212,19 @@
                 }
 
                     .index > .sui-spa-tut-cus > .sui > .topic > div > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         text-transform: uppercase;
                         color: rgb(51, 51, 51);
                         text-decoration: none;
                         font-size: 1.3em;
                     }
 
+                        .index > .sui-spa-tut-cus > .sui > .topic > div > a:hover {
+                            text-decoration: underline;
+                        }
+
                     .index > .sui-spa-tut-cus > .sui > .topic > div > p {
-                        font-family: Roboto-Light;
+                        /*font-family: Roboto-Light;*/
                         color: rgb(63, 63, 63);
                         text-align: justify;
                         margin: 0.3em 0em 0em 0em;
@@ -255,7 +259,7 @@
                 }
 
                     .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .spa > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.5em;
                         color: rgb(255, 255, 255);
                         border-top: 2px solid rgb(255, 255, 255);
@@ -288,7 +292,7 @@
                 }
 
                     .index > .sui-spa-tut-cus > .spa-tut-cus > .spa-tut > .tut > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.5em;
                         color: rgb(255, 255, 255);
                         border-top: 2px solid rgb(255, 255, 255);
@@ -320,13 +324,13 @@
 
                 .index > .sui-spa-tut-cus > .spa-tut-cus > .cus > p {
                     text-align: center;
-                    font-family: Roboto-Light;
+                    /*font-family: Roboto-Light;*/
                     font-size: 1.2em;
                     margin: 1em 0em;
                 }
 
                     .index > .sui-spa-tut-cus > .spa-tut-cus > .cus > p > span {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.5em;
                     }
 
@@ -338,11 +342,15 @@
                     .index > .sui-spa-tut-cus > .spa-tut-cus > .cus > div > a {
                         padding: 0;
                         text-align: center;
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         color: rgb(51, 51, 51);
                         text-decoration: none;
                         font-size: 1.1em;
                     }
+
+                        .index > .sui-spa-tut-cus > .spa-tut-cus > .cus > div > a:hover {
+                            font-size: 1.2em;
+                        }
 
                         .index > .sui-spa-tut-cus > .spa-tut-cus > .cus > div > a > img {
                             margin: 0em 0em 0.5em 0em;
@@ -386,7 +394,7 @@
             }
 
         .index > .news > div > p {
-            font-family: Roboto-Light;
+            /*font-family: Roboto-Light;*/
             font-size: 1.2em;
             padding: 0 2em 0 0;
             margin: 1em 0 0 0;
@@ -399,7 +407,7 @@
     }
 
         .index > .proj > p {
-            font-family: Roboto-Black;
+            /*font-family: Roboto-Black;*/
             font-size: 2em;
             color: rgb(12, 123, 7);
             text-transform: uppercase;
@@ -436,7 +444,7 @@
 
                                     .index > .proj > div > .well > div > .pic > .item > div > div > a {
                                         text-align: center;
-                                        font-family: Roboto-Regular;
+                                        /*font-family: Roboto-Regular;*/
                                         font-size: 1.3em;
                                         color: rgba(0, 0, 0, .6);
                                         text-decoration: none;
@@ -789,7 +797,7 @@
             }
 
         .index > .news > div > p {
-            font-family: Roboto-Light;
+            /*font-family: Roboto-Light;*/
             font-size: 1.2em;
             padding: 0 2em 0 0;
             margin: 1em 0 0 0;
@@ -805,7 +813,7 @@
 
         .index > .proj > p {
             text-align: center;
-            font-family: Roboto-Bold;
+            /*font-family: Roboto-Bold;*/
             font-size: 2em;
             text-transform: uppercase;
             margin: 0 0 1em 0;
@@ -831,7 +839,7 @@
         }
 
         .index > .proj > div > a {
-            font-family: Roboto-Bold;
+            /*font-family: Roboto-Bold;*/
             font-size: 1.2em;
             color: rgb(51, 51, 51);
             text-decoration: none;
@@ -960,7 +968,7 @@
                 }
 
                     .index > .sui-spa-tut-cus > .sui > .img > p > span {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.5em;
                     }
 
@@ -1172,7 +1180,7 @@
                 }
 
                     .index > .sui-spa-tut-cus > .sui > .img > p > span {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.4em;
                     }
 

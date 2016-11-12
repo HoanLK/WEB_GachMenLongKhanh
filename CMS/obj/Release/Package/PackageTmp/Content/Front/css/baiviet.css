@@ -35,7 +35,7 @@
             }
 
                 .trangbaiviet > .phanthan > .desktop > div > a {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 2em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -74,7 +74,7 @@
                 }
 
                 .trangbaiviet > .phanthan > .desktop > .baivietlienquan > p {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 1.6em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -93,7 +93,7 @@
                     }
 
                         .trangbaiviet > .phanthan > .desktop > .baivietlienquan > .khung > div > a {
-                            font-family: Roboto-Regular;
+                            /*font-family: Roboto-Regular;*/
                             font-size: 1.3em;
                             color: rgb(100, 100, 100);
                             text-decoration: none;
@@ -115,7 +115,7 @@
         }
 
             .trangbaiviet > .phanthan > article > .tieude {
-                font-family: Roboto-Regular;
+                /*font-family: Roboto-Regular;*/
                 font-size: 2em;
                 text-transform: uppercase;
                 text-align: center;
@@ -129,7 +129,7 @@
             }
 
             .trangbaiviet > .phanthan > article > .noidung {
-                font-family: Roboto-Light;
+                /*font-family: Roboto-Light;*/
                 font-size: 1.3em;
                 text-align: justify;
                 line-height: 1.7em;
@@ -146,7 +146,7 @@
     }
 
         .trangbaiviet > .proj > p {
-            font-family: Roboto-Black;
+            /*font-family: Roboto-Black;*/
             font-size: 2em;
             color: rgb(12, 123, 7);
             text-transform: uppercase;
@@ -183,7 +183,7 @@
 
                                     .trangbaiviet > .proj > div > .well > div > .pic > .item > div > div > a {
                                         text-align: center;
-                                        font-family: Roboto-Regular;
+                                        /*font-family: Roboto-Regular;*/
                                         font-size: 1.3em;
                                         color: rgba(0, 0, 0, .6);
                                         text-decoration: none;
@@ -220,7 +220,7 @@
 
     /*Bài viết liên quan*/
     .trangbaiviet > .phanthan > aside > .baivietlienquan > .khung > div > a {
-        font-family: Roboto-Regular;
+        /*font-family: Roboto-Regular;*/
         font-size: 1.3em;
         color: rgb(100, 100, 100);
         text-decoration: none;
@@ -258,7 +258,7 @@
         }
 
             .trangbaiviet > .phanthan > article > .tieude {
-                font-family: Roboto-Regular;
+                /*font-family: Roboto-Regular;*/
                 font-size: 2em;
                 text-transform: uppercase;
                 text-align: center;
@@ -272,7 +272,7 @@
             }
 
             .trangbaiviet > .phanthan > article > .noidung {
-                font-family: Roboto-Light;
+                /*font-family: Roboto-Light;*/
                 font-size: 1.5em;
                 text-align: justify;
                 line-height: 1.7em;
@@ -301,7 +301,7 @@
                 }
 
                 .trangbaiviet > .phanthan > .mobile > .sidebar > a {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 1.6em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -342,7 +342,7 @@
                 }
 
                 .trangbaiviet > .phanthan > .mobile > .baivietlienquan > p {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 1.6em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -361,7 +361,7 @@
                     }
 
                         .trangbaiviet > .phanthan > .mobile > .baivietlienquan > .khung > div > a {
-                            font-family: Roboto-Regular;
+                            /*font-family: Roboto-Regular;*/
                             font-size: 1.2em;
                             color: rgb(100, 100, 100);
                             text-decoration: none;
@@ -391,7 +391,7 @@
         }
 
             .trangbaiviet > .phanthan > article > .tieude {
-                font-family: Roboto-Regular;
+                /*font-family: Roboto-Regular;*/
                 font-size: 1.5em;
                 text-transform: uppercase;
                 text-align: center;
@@ -405,7 +405,7 @@
             }
 
             .trangbaiviet > .phanthan > article > .noidung {
-                font-family: Roboto-Light;
+                /*font-family: Roboto-Light;*/
                 font-size: 1.2em;
                 text-align: justify;
                 line-height: 1.7em;
@@ -431,7 +431,7 @@
             }
 
                 .trangbaiviet > .phanthan > .mobile > div > a {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 2em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -470,7 +470,7 @@
                 }
 
                 .trangbaiviet > .phanthan > .mobile > .baivietlienquan > p {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 1.6em;
                     color: rgb(119, 72, 29);
                     text-decoration: none;
@@ -489,7 +489,7 @@
                     }
 
                         .trangbaiviet > .phanthan > .mobile > .baivietlienquan > .khung > div > a {
-                            font-family: Roboto-Regular;
+                            /*font-family: Roboto-Regular;*/
                             font-size: 1.3em;
                             color: rgb(100, 100, 100);
                             text-decoration: none;

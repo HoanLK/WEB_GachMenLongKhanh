@@ -44,8 +44,8 @@
         <div class="khung col-md-12 col-lg-12">
             <div class="col-md-3 col-lg-3" dir-paginate="(index, value) in spNoiBats | itemsPerPage:4">
                 <a href="#" ng-click="show(value.idProduct)" data-toggle="modal" data-target="#myModal">
-                    <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
-                    {{value.title}}
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" style="width:100%"/><br />
+                    <p style="font-size: 1.5em; margin: 1em 0; text-align:center">{{value.title}}</p>
                 </a>
             </div>
         </div>

@@ -41,7 +41,7 @@
             }
 
                 .loaisanpham > .banner > .link > .danhmuc > p {
-                    font-family: Roboto-Black;
+                    /*font-family: Roboto-Black;*/
                     font-size: 2.5em;
                     color: rgb(255, 255, 255);
                     text-transform: uppercase;
@@ -62,7 +62,7 @@
 
                     .loaisanpham > .banner > .link > .danhmuc > .cacmuc > a {
                         display: block;
-                        font-family: Roboto-Regular;
+                        /*font-family: Roboto-Regular;*/
                         font-size: 1.4em;
                         color: rgb(255, 255, 255);
                         text-transform: uppercase;
@@ -87,7 +87,7 @@
 
                     .loaisanpham > .banner > .link > .danhmuc > .share > p {
                         display: inline;
-                        font-family: Roboto-Regular;
+                        /*font-family: Roboto-Regular;*/
                         font-size: 1.2em;
                         color: rgb(255, 255, 255);
                     }
@@ -105,7 +105,7 @@
 
         /*Lời dẫn*/
         .loaisanpham > .banner > p {
-            font-family: Roboto-Regular;
+            /*font-family: Roboto-Regular;*/
             font-size: 1.2em;
             text-align: center;
             margin: 2em 0 1em 0;
@@ -120,7 +120,7 @@
 
         /*Tiêu đề*/
         .loaisanpham > .danhsachsp > p {
-            font-family: Roboto-Black;
+            /*font-family: Roboto-Black;*/
             font-size: 2em;
             color: rgb(74, 74, 74);
             text-transform: uppercase;
@@ -156,13 +156,13 @@
                         }
 
                         .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p {
-                            font-family: Roboto-Regular;
+                            /*font-family: Roboto-Regular;*/
                             font-size: 1.2em;
                             margin: 0.5em 0 1em 0;
                         }
 
                             .loaisanpham > .danhsachsp > .cacsanpham > div > div > a > p > span {
-                                font-family: Roboto-Black;
+                                /*font-family: Roboto-Black;*/
                                 text-transform: uppercase;
                                 font-size: 1.2em;
                             }
@@ -197,7 +197,7 @@
 
         /*Tiêu đề*/
         .loaisanpham > .bosutap > p {
-            font-family: Roboto-Black;
+            /*font-family: Roboto-Black;*/
             font-size: 2em;
             color: rgb(74, 74, 74);
             text-transform: uppercase;

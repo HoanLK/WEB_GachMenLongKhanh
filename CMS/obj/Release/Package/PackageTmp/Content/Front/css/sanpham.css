@@ -41,7 +41,7 @@
 
                 .sanpham > .cacmucsanpham > div > .tieude > p {
                     text-align: center;
-                    font-family: Roboto-Regular;
+                    /*font-family: Roboto-Regular;*/
                     text-transform: uppercase;
                     font-size: 2em;
                     margin: 0;
@@ -80,19 +80,19 @@
                     }
 
                     .sanpham > .cacmucsanpham > div > .cacsanpham > div > a > p {
-                        font-family: Roboto-Medium;
+                        /*font-family: Roboto-Medium;*/
                         font-size: 1.5em;
                         margin: 1em 0;
                     }
 
                         .sanpham > .cacmucsanpham > div > .cacsanpham > div > a > p > span {
-                            font-family: Roboto-Black;
+                            /*font-family: Roboto-Black;*/
                             text-transform: uppercase;
                         }
 
             /*Nút xem thêm*/
             .sanpham > .cacmucsanpham > div > a {
-                font-family: Roboto-Medium;
+                /*font-family: Roboto-Medium;*/
                 font-size: 1.5em;
                 color: rgb(255, 255, 255);
                 background: rgb(15, 172, 244);

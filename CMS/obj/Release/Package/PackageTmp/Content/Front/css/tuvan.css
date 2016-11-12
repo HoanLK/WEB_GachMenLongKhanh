@@ -13,7 +13,7 @@
         }
 
         .tuvan > .banner > p {
-            font-family: Roboto-Light;
+            /*font-family: Roboto-Light;*/
             font-size: 1.5em;
             text-align: center;
             color: rgb(100, 100, 100);
@@ -55,7 +55,7 @@
                 }
 
                     .tuvan > .noidung > .sidebar-topic > .desktop > div > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 2em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -94,7 +94,7 @@
                     }
 
                     .tuvan > .noidung > .sidebar-topic > .desktop > .baivietlienquan > p {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.6em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -113,7 +113,7 @@
                         }
 
                             .tuvan > .noidung > .sidebar-topic > .desktop > .baivietlienquan > .khung > div > a {
-                                font-family: Roboto-Regular;
+                                /*font-family: Roboto-Regular;*/
                                 font-size: 1.3em;
                                 color: rgb(100, 100, 100);
                                 text-decoration: none;
@@ -152,7 +152,7 @@
                         }
 
                             .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > .text > .tieude {
-                                font-family: Roboto-Regular;
+                                /*font-family: Roboto-Regular;*/
                                 font-size: 1.8em;
                                 text-transform: uppercase;
                                 text-align: center;
@@ -160,7 +160,7 @@
                             }
 
                             .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > .text > .tomtat {
-                                font-family: Roboto-Light;
+                                /*font-family: Roboto-Light;*/
                                 font-size: 1.5em;
                                 text-align: justify;
                                 padding: 0;
@@ -168,7 +168,7 @@
                             }
 
                             .tuvan > .noidung > .sidebar-topic > .cacbaiviet > div > .baiviet > .text > a {
-                                font-family: Roboto-Medium;
+                                /*font-family: Roboto-Medium;*/
                                 font-size: 1.5em;
                                 color: rgb(100, 100, 100);
                                 text-decoration: none;
@@ -209,7 +209,7 @@
         }
 
             .tuvan > .noidung > .baivietlienquan > p {
-                font-family: Roboto-Black;
+                /*font-family: Roboto-Black;*/
                 font-size: 2em;
                 color: rgb(12, 123, 7);
                 text-transform: uppercase;
@@ -246,7 +246,7 @@
 
                                         .tuvan > .noidung > .baivietlienquan > div > .well > div > .pic > .item > div > div > a {
                                             text-align: center;
-                                            font-family: Roboto-Regular;
+                                            /*font-family: Roboto-Regular;*/
                                             font-size: 1.3em;
                                             color: rgba(0, 0, 0, .6);
                                             text-decoration: none;
@@ -424,7 +424,7 @@
                     }
 
                     .tuvan > .noidung > .sidebar-topic > .mobile > .sidebar > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.6em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -465,7 +465,7 @@
                     }
 
                     .tuvan > .noidung > .sidebar-topic > .mobile > .baivietlienquan > p {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.6em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -484,7 +484,7 @@
                         }
 
                             .tuvan > .noidung > .sidebar-topic > .mobile > .baivietlienquan > .khung > div > a {
-                                font-family: Roboto-Regular;
+                                /*font-family: Roboto-Regular;*/
                                 font-size: 1.2em;
                                 color: rgb(100, 100, 100);
                                 text-decoration: none;
@@ -636,7 +636,7 @@
                 }
 
                     .tuvan > .noidung > .sidebar-topic > .mobile > div > a {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 2em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -675,7 +675,7 @@
                     }
 
                     .tuvan > .noidung > .sidebar-topic > .mobile > .baivietlienquan > p {
-                        font-family: Roboto-Black;
+                        /*font-family: Roboto-Black;*/
                         font-size: 1.6em;
                         color: rgb(119, 72, 29);
                         text-decoration: none;
@@ -694,7 +694,7 @@
                         }
 
                             .tuvan > .noidung > .sidebar-topic > .mobile > .baivietlienquan > .khung > div > a {
-                                font-family: Roboto-Regular;
+                                /*font-family: Roboto-Regular;*/
                                 font-size: 1.3em;
                                 color: rgb(100, 100, 100);
                                 text-decoration: none;

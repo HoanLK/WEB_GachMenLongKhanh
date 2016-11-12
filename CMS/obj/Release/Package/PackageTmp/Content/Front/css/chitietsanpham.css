@@ -27,16 +27,16 @@
                 }
 
                     .modal > div > div > .modal-body > .info > p {
-                        font-family: Roboto-Light;
+                        /*font-family: Roboto-Light;*/
                     }
 
                         .modal > div > div > .modal-body > .info > p > span {
-                            font-family: Roboto-Bold;
+                            /*font-family: Roboto-Bold;*/
                             text-transform: uppercase;
                         }
 
                         .modal > div > div > .modal-body > .info > p > .masanpham {
-                            font-family: Roboto-Light;
+                            /*font-family: Roboto-Light;*/
                         }
 
                     .modal > div > div > .modal-body > .info > .social {
