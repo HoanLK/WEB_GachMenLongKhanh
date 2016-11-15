@@ -2637,6 +2637,9 @@
     <Content Include="Scripts\front\videoController.min.js">
       <DependentUpon>videoController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\loading-spinner\angular-loading-spinner.js" />
+    <Content Include="Scripts\loading-spinner\angular-spinner.min.js" />
+    <Content Include="Scripts\loading-spinner\spin.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -2986,6 +2989,7 @@
     <Content Include="Content\Front\fonts\Roboto-Light.ttf" />
     <Content Include="Content\Front\fonts\Roboto-Medium.ttf" />
     <Content Include="Content\Front\fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\Front\css\header-footer.min.css" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\DanhMucBaiViet\Index.cshtml" />

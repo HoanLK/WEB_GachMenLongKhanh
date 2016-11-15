@@ -11,25 +11,25 @@
     </div>
     <div class="prod-vis col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div id="prod" class="prod col-xs-12 col-sm-12 col-md-7 col-lg-7">
-            <div id="prod-1" class="col-xs-12 col-md-3 col-md-3 col-lg-3">
+            <div id="prod-1" class="col-xs-6 col-md-3 col-md-3 col-lg-3">
                 <a href="/danh-muc-san-pham/gach-men-cao-cap-2"></a>
                 <img src="~/Content/Front/Image/trangchu/product-gachmen.png" alt="Gạch men" class="img-responsive" />
                 <p class="title">Gạch men cao cấp</p>
                 <p class="content">Chúng tôi sản xuất và cung cấp một phạm vi rộng lớn các loại gạch men cao cấp, sang trọng, trang nhã và đầy đủ kiểu dáng, kích cỡ.</p>
             </div>
-            <div id="prod-2" class="col-xs-12 col-md-3 col-md-3 col-lg-3">
+            <div id="prod-2" class="col-xs-6 col-md-3 col-md-3 col-lg-3">
                 <a href="/danh-muc-san-pham/thiet-bi-nha-tam-4"></a>
                 <img src="~/Content/Front/Image/trangchu/THIERT BI PHONG TAM-min.jpg" alt="Thiết bị nhà tắm" class="img-responsive" />
                 <p class="title">Thiết bị nhà tắm</p>
                 <p class="content">Chúng tôi sản xuất và cung cấp một phạm vi rộng lớn các loại gạch men cao cấp, sang trọng, trang nhã và đầy đủ kiểu dáng, kích cỡ.</p>
             </div>
-            <div id="prod-3" class="col-xs-12 col-md-3 col-md-3 col-lg-3">
+            <div id="prod-3" class="col-xs-6 col-md-3 col-md-3 col-lg-3">
                 <a href="/danh-muc-san-pham/thiet-bi-ve-sinh-3"></a>
                 <img src="~/Content/Front/Image/trangchu/product-thietbiwc.png" alt="Thiết bị vệ sinh" class="img-responsive" />
                 <p class="title">Thiết bị vệ sinh</p>
                 <p class="content">Chúng tôi sản xuất và cung cấp một phạm vi rộng lớn các loại gạch men cao cấp, sang trọng, trang nhã và đầy đủ kiểu dáng, kích cỡ.</p>
             </div>
-            <div id="prod-4" class="col-xs-12 col-md-3 col-md-3 col-lg-3">
+            <div id="prod-4" class="col-xs-6 col-md-3 col-md-3 col-lg-3">
                 <a href="/danh-muc-san-pham/tranh-3d-noi-5"></a>
                 <img src="~/Content/Front/Image/trangchu/product-tranh3d.png" alt="Tranh 3D" class="img-responsive" />
                 <p class="title">Tranh 3D nổi</p>
@@ -51,6 +51,7 @@
                 <a href="/danh-muc-bai-viet/goc-tu-van-2">read more</a>
             </div>
             <div class="topic col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                <span us-spinner="{radius:15, width:4, length: 8}"></span>
                 <div dir-paginate="(index, value) in baiVietNews | itemsPerPage:3">
                     <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" style="font-weight:bold;">{{value.title}}</a>
                     <p ng-bind-html="value.description | limitTo: 200"></p>
@@ -81,6 +82,7 @@
         </div>
     </div>
     <div id="news" class="news col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
         <div class="topic-1 col-xs-12 col-sm-4 col-md-4 col-lg-4" dir-paginate="(index, value) in baiVietTops | itemsPerPage:3">
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
                 <img ng-src="{{value.image}}" alt="{{value.title}}" /><br />
@@ -93,6 +95,7 @@
     <div class="proj hidden-xs hidden-sm col-md-12 col-lg-12">
         <p class="col-md-12 col-lg-12">công trình tiêu biểu</p>
         <div class="col-md-12 col-lg-12 border-slide">
+            <span us-spinner="{radius:15, width:4, length: 8}"></span>
             <div class="well">
                 <div id="myCarousel" class="carousel slide all">
                     <!-- Carousel items -->

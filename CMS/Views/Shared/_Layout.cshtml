@@ -39,7 +39,7 @@
 
     <link href="~/Content/Front/css/BaiViet.css" rel="stylesheet" />
     <link href="~/Content/Front/css/chitietsanpham.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/header-footer.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/header-footer.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/index.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/loaisanpham.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/SanPham.min.css" rel="stylesheet" />
@@ -85,11 +85,11 @@
 
         <!--Giao diện menu trên điện thoại-->
         <div class="mobile hidden-md hidden-lg">
-            <nav id="dl-menu" class="dl-menuwrapper">
+            <nav id="dl-menu" class="dl-menuwrapper" ng-controller="searchController">
                 <button class="dl-trigger">Open Menu</button>
                 <div>
                     <a href="@Url.Action("Index","Home")" class="logo"><img src="~/Content/Front/Image/header-footer/logo-co.png" alt="" /></a>
-                    <a href="#" class="search">"Tìm kiếm"</a>
+                    <a id="search-btn" class="search"><i class="fa fa-search search-btn"></i></a>
                 </div>
                 <ul class="dl-menu" style="z-index:2;">
                     <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
@@ -104,6 +104,7 @@
                     <li><a href="/danh-muc-bai-viet/goc-tu-van-2">Góc tư vấn</a></li>
                     <li><a href="/danh-muc-san-pham/khong-gian-dep-3">Không gian đẹp</a></li>
                 </ul>
+                <input type="text"  id="search-box-mobile" class="search-box-mobile" placeholder="Nhập thông tin cần tìm kiếm...." ng-keypress="($event.which === 13)?search():0" ng-model="searchText" />
             </nav>
         </div>
     </header>
@@ -224,6 +225,11 @@
     <script src="~/Scripts/front/trangchu.min.js"></script>
     <script src="~/Scripts/front/loaisanpham.min.js"></script>
     <script src="~/Scripts/front/header-footer.min.js"></script>
+
+    <!--Loading-->
+    <script src="~/Scripts/loading-spinner/spin.min.js"></script>
+    <script src="~/Scripts/loading-spinner/angular-spinner.min.js"></script>
+    <script src="~/Scripts/loading-spinner/angular-loading-spinner.js"></script>
 
     <!--Banner-->
     <script src="~/Scripts/Front/bannerController.min.js"></script>

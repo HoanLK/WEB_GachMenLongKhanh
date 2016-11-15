@@ -242,4 +242,8 @@
                     padding: 0.5em 1em;
                     margin: 1.5em 0 1em 0;
                 }
+
+                .modal-dialog{
+                    margin:0;
+                }
 }

@@ -1,4 +1,4 @@
-﻿var myApp = angular.module('myApp', ['ngCkeditor', 'ui.grid', 'ui.grid.edit', 'ui.grid.pagination', 'ui.grid.selection', 'ui.grid.resizeColumns', 'ui.grid.moveColumns', 'ui.grid.exporter']);
+﻿var myApp = angular.module('myApp', ['ngCkeditor', 'ui.grid', 'ui.grid.edit', 'ui.grid.pagination', 'ui.grid.selection', 'ui.grid.resizeColumns', 'ui.grid.moveColumns', 'ui.grid.exporter', 'ngLoadingSpinner']);
 
 myApp.directive('ckEditor', function () {
     return {

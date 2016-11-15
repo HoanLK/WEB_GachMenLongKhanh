@@ -87,7 +87,7 @@
 
                 .index > .prod-vis > .prod > div > img {
                     width: 100%;
-                    height: 75%;
+                    height: 37em;
                 }
 
                 .index > .prod-vis > .prod > div > .title {
@@ -1111,15 +1111,15 @@
         }
 
             .index > .prod-vis > .prod > div {
-                width: 100%;
-                height: 30em;
-                margin: 0em 0 1em 0em;
+                width: 48%;
+                height: 50em;
+                margin: 0em 1% 1em 0em;
                 display: block;
             }
 
                 .index > .prod-vis > .prod > div > img {
                     width: 100%;
-                    height: 20em;
+                    height: 30em;
                 }
 
                 .index > .prod-vis > .prod > div > .title {
