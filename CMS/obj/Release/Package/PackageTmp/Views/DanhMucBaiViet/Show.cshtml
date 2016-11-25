@@ -34,14 +34,14 @@
                         <img ng-src="{{value.image}}" alt="{{value.title}}" ng-show="index%2==0" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" />
                         <div class="text col-xs-12 col-sm-7 col-md-7 col-lg-7" ng-show="index%2==0">
                             <p class="tieude col-xs-12 col-sm-12 col-md-12 col-lg-12">{{value.title}}</p>
-                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.content | limitTo: 300"></p>
+                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.description | limitTo: 300"></p>
                             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm</a>
                         </div>
 
                         <!--Chẵn-->
                         <div class="text col-xs-12 col-sm-7 col-md-7 col-lg-7" ng-show="index%2==1">
                             <p class="tieude col-xs-12 col-sm-12 col-md-12 col-lg-12">{{value.title}}</p>
-                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.content | limitTo: 300"></p>
+                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.description | limitTo: 300"></p>
                             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm</a>
                         </div>
                         <img ng-src="{{value.image}}" alt="{{value.title}}" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" ng-show="index%2==1" />
@@ -53,7 +53,7 @@
                         <img ng-src="{{value.image}}" alt="{{value.title}}" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" />
                         <div class="text col-xs-12 col-sm-7 col-md-7 col-lg-7">
                             <p class="tieude col-xs-12 col-sm-12 col-md-12 col-lg-12">{{value.title}}</p>
-                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.content | limitTo: 300"></p>
+                            <p class="tomtat col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="value.description | limitTo: 300"></p>
                             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm</a>
                         </div>
                     </div>
