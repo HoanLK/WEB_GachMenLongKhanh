@@ -14,15 +14,14 @@
 
         .tuvan > .banner > p {
             /*font-family: Roboto-Light;*/
-            font-size: 1.5em;
+            font-size: 3em;
             text-align: center;
             color: rgb(100, 100, 100);
             width: 70%;
             left: 15%;
             border-top: solid 1px rgb(100, 100, 100);
             border-bottom: solid 1px rgb(100, 100, 100);
-            padding: 0.3em 7em;
-            margin: 0.5em 0;
+            margin: 1em 0 0 0;
         }
 
     /*Nội dung*/
