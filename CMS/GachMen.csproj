@@ -2264,6 +2264,9 @@
     <Content Include="Content\Front\css\BaiViet.min.css">
       <DependentUpon>baiviet.css</DependentUpon>
     </Content>
+    <Content Include="Content\Front\css\BaiViet.min.min.css">
+      <DependentUpon>BaiViet.min.css</DependentUpon>
+    </Content>
     <Content Include="Content\Front\css\chitietsanpham.css" />
     <Content Include="Content\Front\css\chitietsanpham.min.css">
       <DependentUpon>chitietsanpham.css</DependentUpon>
@@ -2354,6 +2357,15 @@
     <Content Include="Content\Front\Image\tuvan\baivietlienquan-4.png" />
     <Content Include="Content\Front\Image\tuvan\banner-bg.png" />
     <Content Include="Content\Front\Image\tuvan\border.png" />
+    <Content Include="Content\Front\Popup\jquery.popup.js" />
+    <Content Include="Content\Front\Popup\jquery.popup.min.js">
+      <DependentUpon>jquery.popup.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Popup\popup.css" />
+    <Content Include="Content\Front\Popup\pop.jpg" />
+    <Content Include="Content\Front\Popup\popup.min.css">
+      <DependentUpon>popup.css</DependentUpon>
+    </Content>
     <Content Include="Content\Images\files\avatar.jpg" />
     <Content Include="Content\Images\images\BoSuuTap\bosuutap-2.png" />
     <Content Include="Content\Images\images\BoSuuTap\bosuutap-3.png" />
@@ -3078,6 +3090,7 @@
     <Content Include="Scripts\front\pagination\README.md" />
     <None Include="Properties\PublishProfiles\Up.pubxml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Shared\_PopTet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

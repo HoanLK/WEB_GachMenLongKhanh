@@ -544,5 +544,29 @@
     "inputFiles": [
       "Scripts/front/header-footer.js"
     ]
+  },
+  {
+    "outputFileName": "Content/Front/Popup/jquery.popup.min.js",
+    "inputFiles": [
+      "Content/Front/Popup/jquery.popup.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/Popup/popTet.min.css",
+    "inputFiles": [
+      "Content/Front/Popup/popTet.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/Popup/linhnguyen.min.css",
+    "inputFiles": [
+      "Content/Front/Popup/linhnguyen.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/Popup/popup.min.css",
+    "inputFiles": [
+      "Content/Front/Popup/popup.css"
+    ]
   }
 ]
