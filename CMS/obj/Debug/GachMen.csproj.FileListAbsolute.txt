@@ -1,6 +1,3 @@
-D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\GachMen.csprojResolveAssemblyReference.cache
-D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\CMS.dll
-D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\CMS.pdb
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\roslyn\csc.exe
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\roslyn\csc.exe.config
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\roslyn\csc.rsp
@@ -61,6 +58,10 @@ D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\WebGrease.dll
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\WebMatrix.Data.dll
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\WebMatrix.WebData.dll
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\Antlr3.Runtime.pdb
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\CKFinder.pdb
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\CKFinder_FileEditor.pdb
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\CKFinder_ImageResize.pdb
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\CKFinder_Watermark.pdb
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\EntityFramework.xml
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\EntityFramework.SqlServer.xml
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\Microsoft.AI.DependencyCollector.xml
@@ -82,3 +83,6 @@ D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\System.Web.WebPages.Deployment.xm
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\System.Web.WebPages.Razor.xml
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\WebMatrix.Data.xml
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\bin\WebMatrix.WebData.xml
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\CMS.dll
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\CMS.pdb
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\obj\Debug\GachMen.csprojResolveAssemblyReference.cache

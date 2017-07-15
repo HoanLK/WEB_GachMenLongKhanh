@@ -10,6 +10,7 @@ using CMS.Models;
 
 namespace CMS.Areas.Admin.Controllers
 {
+    [Authorize]
     public class ImagesController : Controller
     {
         private GachMenLongKhanhEntities db = new GachMenLongKhanhEntities();

@@ -52,25 +52,34 @@
                     <div class="card-body tab-content">
                         <!--Nội dung-->
                         <div class="tab-pane active" id="noidung">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="trongLuong">Kích thước</label>
-                                    <input type="text" class="form-control" id="trongLuong" name="trongLuong" ng-model="product.KichThuoc" />
+                            <form class="form" role="form">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="KichThuoc" name="KichThuoc" ng-model="product.KichThuoc" />
+                                        <label for="KichThuoc">Kích thước</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="vatLieuDongGoi">Chất liệu</label>
-                                    <input type="text" class="form-control" id="vatLieuDongGoi" name="vatLieuDongGoi" ng-model="product.ChatLieu" />
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="vatLieuDongGoi" name="vatLieuDongGoi" ng-model="product.ChatLieu" />
+                                        <label for="vatLieuDongGoi">Chất liệu</label>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="price" name="price" ng-model="product.price | number:0" />
+                                        <label for="price">Giá</label>
+                                    </div>
+                                </div>
+                            </form>
+
                             <div class="col-md-9">
-                                
+
                                 Mô tả sản phẩm
                                 <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.content" name="content"></textarea>
                                 <br />
                                 @*Tính năng sản phẩm
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.description" name="description"></textarea>*@
+                                    <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.description" name="description"></textarea>*@
                             </div>
 
 

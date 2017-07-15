@@ -83,6 +83,23 @@
     <Property Name="anh" Type="ntext" />
     <Property Name="ghichu" Type="ntext" />
   </EntityType>
+  <EntityType Name="infoCompany">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenCTy" Type="nvarchar(max)" />
+    <Property Name="diaChi" Type="nvarchar(max)" />
+    <Property Name="mail" Type="nvarchar(max)" />
+    <Property Name="sdt" Type="varchar" MaxLength="15" />
+    <Property Name="sdtBan" Type="varchar" MaxLength="15" />
+    <Property Name="sdtDD" Type="varchar" MaxLength="15" />
+    <Property Name="image" Type="nvarchar(max)" />
+    <Property Name="fb" Type="nvarchar(max)" />
+    <Property Name="googlePlus" Type="nvarchar(max)" />
+    <Property Name="youtube" Type="nvarchar(max)" />
+    <Property Name="twitter" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Order">
     <Key>
       <PropertyRef Name="idOrder" />
@@ -264,6 +281,7 @@
     <EntitySet Name="CategoryProduct" EntityType="Self.CategoryProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="infoCompany" EntityType="Self.infoCompany" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />

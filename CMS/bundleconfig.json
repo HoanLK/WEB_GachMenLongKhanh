@@ -568,5 +568,17 @@
     "inputFiles": [
       "Content/Front/Popup/popup.css"
     ]
+  },
+  {
+    "outputFileName": "Scripts/admin/suaInfoCompanyController.min.js",
+    "inputFiles": [
+      "Scripts/admin/suaInfoCompanyController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/infoCompanyController.min.js",
+    "inputFiles": [
+      "Scripts/front/infoCompanyController.js"
+    ]
   }
 ]

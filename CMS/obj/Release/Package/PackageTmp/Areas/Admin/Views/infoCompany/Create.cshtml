@@ -1,0 +1,114 @@
+﻿@*@model CMS.Models.infoCompany*@
+
+@{
+    ViewBag.Title = "Sửa thông tin công ty";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="suaInfoCompanyController">
+        <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="saveinfoCompany()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            @*<div class="col-md-2">
+                    <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveinfoCompanyAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveinfoCompanyAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+                </div>*@
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Hủy bỏ</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+
+        <div class="card">
+            <div class="card-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!infoCompany.tenCTy, 'has-success':infoCompany.tenCTy}">
+                                <input type="text" class="form-control" id="tenCTy" name="tenCTy" ng-model="infoCompany.tenCTy">
+                                <label for="tenCTy">Tên công ty</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="card-head">
+                        <ul class="nav nav-tabs" data-toggle="tabs">
+                            <li class="active"><a href="#noidung">Thông tin liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body tab-content">
+                        <div class="tab-pane active" id="noidung">
+                            <div class="col-md-9">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="diaChi" name="diaChi" ng-model="infoCompany.diaChi" />
+                                        <label for="diaChi">Địa chỉ</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="mail" name="mail" ng-model="infoCompany.mail" />
+                                        <label for="mail">Mail</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="sdt" name="sdt" ng-model="infoCompany.sdt" />
+                                        <label for="sdt">Hotline</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="sdtBan" name="sdtBan" ng-model="infoCompany.sdtBan" />
+                                        <label for="sdtBan">SĐT bàn</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="sdtDD" name="sdtDD" ng-model="infoCompany.sdtDD" />
+                                        <label for="sdtDD">SĐT di động</label>
+                                    </div>
+                                    <div class="col-md-6" style="padding-left:0;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fb" name="fb" ng-model="infoCompany.fb" />
+                                            <label for="fb">Facebook</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="googlePlus" name="googlePlus" ng-model="infoCompany.googlePlus" />
+                                            <label for="googlePlus">Google+</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="padding-right:0;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fb" name="fb" ng-model="infoCompany.fb" />
+                                            <label for="fb">Facebook</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="googlePlus" name="googlePlus" ng-model="infoCompany.googlePlus" />
+                                            <label for="googlePlus">Google+</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-md-3">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="image" id="image" ng-model="infoCompany.image" class="form-control" /> <button class="btn btn-primary" ng-click="chooseImage()">Chọn ảnh</button>
+                                        <label for="image">Logo công ty</label>
+                                        <img class="img-responsive" ng-src="{{infoCompany.image}}" ng-show="infoCompany.image" />
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

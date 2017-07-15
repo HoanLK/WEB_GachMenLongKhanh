@@ -213,6 +213,12 @@
                             <span class="title">Hình ảnh</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="@Url.Action("Create", "InfoCompany", new { Area = "Admin" })">
+                            <div class="gui-icon"><i class="fa fa-building-o"></i></div>
+                            <span class="title">Thông tin công ty</span>
+                        </a>
+                    </li>
                     <!--Account-->
                     <li>
                         <a href="@Url.Action("Index", "Account" , new { Area="" })">
@@ -323,6 +329,8 @@
     <script src="~/Scripts/admin/menumultilevelFactory.min.js"></script>
     <script src="~/Scripts/admin/urlFactory.min.js"></script>
 
+    <!--Thông tin công ty-->
+    <script src="~/Scripts/admin/suaInfoCompanyController.min.js"></script>
     <!--Category-->
     <script src="~/Scripts/admin/categoryFactory.min.js"></script>
     <script src="~/Scripts/admin/themCategoryController.min.js"></script>

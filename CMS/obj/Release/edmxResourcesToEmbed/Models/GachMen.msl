@@ -89,6 +89,24 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="infoCompany">
+      <EntityTypeMapping TypeName="GachMenLongKhanhModel.infoCompany">
+        <MappingFragment StoreEntitySet="infoCompany">
+          <ScalarProperty Name="twitter" ColumnName="twitter" />
+          <ScalarProperty Name="youtube" ColumnName="youtube" />
+          <ScalarProperty Name="googlePlus" ColumnName="googlePlus" />
+          <ScalarProperty Name="fb" ColumnName="fb" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="sdtDD" ColumnName="sdtDD" />
+          <ScalarProperty Name="sdtBan" ColumnName="sdtBan" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="tenCTy" ColumnName="tenCTy" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Order">
       <EntityTypeMapping TypeName="GachMenLongKhanhModel.Order">
         <MappingFragment StoreEntitySet="Order">

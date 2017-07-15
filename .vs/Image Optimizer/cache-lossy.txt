@@ -32,3 +32,56 @@ D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVa
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVan\mẹo nhỏ trong chọn gạch phòng bếp\phong bep.jpg|2517
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\ThietBiNhaTam\bồn tắm 02.jpg|2552
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\ThietBiNhaTam\bồn tắm nằm 01.jpg|2336
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Banner\Banner-min.png|2699
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-1.png|6101
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\ThietBiVeSinh\vesinh-2.png|6897
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-2.png|5520
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc1-min.png|7113
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-3.png|5882
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\BoSuuTap\bosuutap-2.png|33601
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc2-min.png|6122
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\ThietBiNhaTam\nhatam-1.png|37307
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-4.png|16055
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc3-min.png|4111
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\57dbaf18b9de6.jpg|1493
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc4-min.png|5724
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\banner-img.png|5074
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc5-min.png|5966
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-2.png|10582
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-3.png|9853
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-4.png|10207
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\ThietBiNhaTam\nhatam-2.png|43170
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GachMenCaoCap\product-gachmen.png|3068
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVan\tuvan.png|5017
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\BoSuuTap\bosuutap-3.png|34271
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVan\gach men cho van phong\van phong(1).jpg|2558
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\ThietBiVeSinh\vesinh-1.png|26774
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\BoSuuTap\bosuutap-4.png|29488
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\ThietBiVeSinh\vesinh-2.png|30909
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\1.PNG|4561
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\2.PNG|6259
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\3.PNG|4926
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-1.png|25618
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\4.PNG|5273
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\5.PNG|6392
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-4.png|84845
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\6.PNG|4611
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\7.PNG|6228
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\Tranh3D\tranh3d-1.png|33865
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\8.PNG|5556
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-2.png|23407
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\Khong gian dep\KHONG GIAN DEP CHO GIA DINH BAN\9.PNG|6170
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\San pham\ChiTietSP-min.png|6640
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\CongTrinhTieuBieu\contrinhtieubieu-3.png|24621
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\Tranh3D\tranh3d-2.png|34069
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\KhachHang DoiTac\doitac-1.png|16259
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\KhachHang DoiTac\doitac-2.png|18292
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\KhachHang DoiTac\doitac-3.png|18640
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian nha tam.jpg|36914
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\banner-img.png|149669
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\gachmen-1.png|58044
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\gachmen-2.png|58743
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\gachmen-3.png|55787
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\gachmen-4.png|56832
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GachMenCaoCap\product-gachmen.png|41271
+D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\images\GocTuVan\tuvan.png|59642

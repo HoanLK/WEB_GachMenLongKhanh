@@ -6,6 +6,7 @@
     <EntitySet Name="CategoryProduct" EntityType="GachMenLongKhanhModel.CategoryProduct" />
     <EntitySet Name="Contact" EntityType="GachMenLongKhanhModel.Contact" />
     <EntitySet Name="Image" EntityType="GachMenLongKhanhModel.Image" />
+    <EntitySet Name="infoCompany" EntityType="GachMenLongKhanhModel.infoCompany" />
     <EntitySet Name="Order" EntityType="GachMenLongKhanhModel.Order" />
     <EntitySet Name="Post" EntityType="GachMenLongKhanhModel.Post" />
     <EntitySet Name="Product" EntityType="GachMenLongKhanhModel.Product" />
@@ -113,6 +114,23 @@
     <Property Name="title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ghichu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="infoCompany">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenCTy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sdt" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="sdtBan" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="sdtDD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="fb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="googlePlus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="youtube" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Order">
     <Key>

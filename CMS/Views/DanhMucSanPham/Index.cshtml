@@ -99,6 +99,7 @@
         </div>
     </article>
 
+    @*Thông tin chi tiết sản phẩm*@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -116,6 +117,9 @@
                         </p>
                         <p>
                             <span>chất liệu: </span> {{product.ChatLieu}}
+                        </p>
+                        <p>
+                            <span>Giá: </span> {{product.price | number:0}}đ
                         </p>
                         <p ng-bind-html="product.content"></p>
                         <div class="social">

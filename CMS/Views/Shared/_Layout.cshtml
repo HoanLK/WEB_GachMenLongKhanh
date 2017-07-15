@@ -7,23 +7,23 @@
 
     <!--SEO-->
     <title>@ViewBag.Title</title>
-    <meta name="description" content="@((ViewBag.Description!=null)?ViewBag.Description:"")" />
-    <meta name="keywords" content='@((ViewBag.Keywords!=null)?ViewBag.Keywords:"")' />
+    <meta name="description" content="@((ViewBag.Description!=null)?ViewBag.Description:"Gạch men hải phòng, gach men hai phong, gạch men long khánh, gach men long khanh")" />
+    <meta name="keywords" content='@((ViewBag.Keywords!=null)?ViewBag.Keywords:"Gạch men Hải Phòng, gach men hai phong, gạch men, long khanh, gach men, lhong khánh, thiết bị vệ sinh, thiet bi ve sinh, thiết bị phòng tắm, thiet bi phong tam")' />
     <meta name="revisit-after" content="1 days" />
     <meta name="robots" content='@((ViewBag.Robots!=null)?ViewBag.Robots:"index, noop, follow")' />
     <meta http-equiv="content-language" content="vi" />
     <link href="~/Content/Front/Image/header-footer/logo.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="alternate" href="" hreflang="vi" />
 
-    <meta itemprop="name" content='@((ViewBag.Title!=null)?ViewBag.Title : "")'>
-    <meta itemprop="description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")'>
-    <meta itemprop="image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")'>
+    <meta itemprop="name" content='@((ViewBag.Title!=null)?ViewBag.Title : "Gạch men long khánh")'>
+    <meta itemprop="description" content='@((ViewBag.Description!=null)?ViewBag.Description:"Long Khánh chuyên cung cấp gạch men, thiết bị phòng tắm, thiết bị vệ sinh tại Hải Phòng")'>
+    <meta itemprop="image" content='@((ViewBag.Image!=null)?ViewBag.Image:"~/Content/Front/Image/header-footer/logo-co.png")'>
 
-    <meta property="og:title" content='@((ViewBag.Title!=null)?ViewBag.Title : "")' />
+    <meta property="og:title" content='@((ViewBag.Title!=null)?ViewBag.Title : "Gạch men Long Khánh")' />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
-    <meta property="og:description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")' />
+    <meta property="og:image" content='@((ViewBag.Image!=null)?ViewBag.Image:"~/Content/Front/Image/header-footer/logo-co.png")' />
+    <meta property="og:description" content='@((ViewBag.Description!=null)?ViewBag.Description:"Long Khánh chuyên cung cấp gạch men, thiết bị phòng tắm, thiết bị vệ sinh tại Hải Phòng")' />
     <meta property="og:site_name" content="" />
 
     <meta name="geo.placename" content="" />
@@ -31,7 +31,7 @@
     <meta name="geo.position" content="" />
     <meta name="ICBM" content="" />
 
-    <link rel="image_src" href='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
+    <link rel="image_src" href='@((ViewBag.Image!=null)?ViewBag.Image:"~/Content/Front/Image/header-footer/logo-co.png")' />
 
     <!--Site-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -39,7 +39,7 @@
 
     <link href="~/Content/Front/css/BaiViet.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/chitietsanpham.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/header-footer.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/header-footer.css" rel="stylesheet" />
     <link href="~/Content/Front/css/index.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/loaisanpham.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/SanPham.min.css" rel="stylesheet" />
@@ -58,7 +58,7 @@
         <!--Giao diện menu trên máy tính-->
         <div class="desktop hidden-xs hidden-sm">
             <!--Logo-->
-            <img src="~/Content/Front/Image/header-footer/logo-co.png" alt="Logo" class="col-md-3 col-lg-3" />
+            <img ng-src="{{infoCompany.image}}" alt="Gạch men Long Khánh" class="col-md-3 col-lg-3" ng-controller="infoCompanyController"/>
             <!--Menu-->
             <ul class="col-md-8 col-lg-8">
                 <li><a href="/danh-muc-bai-viet/khong-gian-dep-3">không gian đẹp</a></li>
@@ -88,7 +88,7 @@
             <nav id="dl-menu" class="dl-menuwrapper" ng-controller="searchController">
                 <button class="dl-trigger">Open Menu</button>
                 <div>
-                    <a href="@Url.Action("Index","Home")" class="logo"><img src="~/Content/Front/Image/header-footer/logo-co.png" alt="" /></a>
+                    <a href="@Url.Action("Index","Home")" class="logo"><img ng-src="{{infoCompany.image}}" alt="Gạch men Long Khánh" ng-controller="infoCompanyController"/></a>
                     <a id="search-btn" class="search"><i class="fa fa-search search-btn"></i></a>
                 </div>
                 <ul class="dl-menu" style="z-index:2;">
@@ -110,7 +110,7 @@
     </header>
 
     @RenderBody()
-    <footer>
+    <footer ng-controller="infoCompanyController">
         <!--Menu và các nút mạng xã hội-->
         <div class="menu-social">
             <!--Menu-->
@@ -153,10 +153,10 @@
             <div class="social col-md-3 col-lg-3">
                 <!--Biểu tượng mạng xã hội-->
                 <div class="icon">
-                    <a target="_blank" href="https://www.facebook.com/long.vudinh.90?fref=pb&hc_location=profile_browser\"><img src="~/Content/Front/Image/header-footer/facebook-icon.png" alt="" /></a>
-                    <a href="#"><img src="~/Content/Front/Image/header-footer/googleplus-icon.png" alt="" /></a>
-                    <a href="#"><img src="~/Content/Front/Image/header-footer/youtube-icon.png" alt="" /></a>
-                    <a href="#"><img src="~/Content/Front/Image/header-footer/twitter-icon.png" alt="" /></a>
+                    <a target="_blank" href="{{infoCompany.fb}}"><img src="~/Content/Front/Image/header-footer/facebook-icon.png" alt="" /></a>
+                    <a target="_blank" href="{{infoCompany.googlePlus}}"><img src="~/Content/Front/Image/header-footer/googleplus-icon.png" alt="" /></a>
+                    <a target="_blank" href="{{infoCompany.youtube}}"><img src="~/Content/Front/Image/header-footer/youtube-icon.png" alt="" /></a>
+                    <a target="_blank" href="{{infoCompany.twitter}}"><img src="~/Content/Front/Image/header-footer/twitter-icon.png" alt="" /></a>
                 </div>
                 <!--Ô tìm kiếm-->
                 <div class="search" ng-controller="searchController">
@@ -169,15 +169,17 @@
         <div class="contact">
             <!--Bản đồ-->
             <div id="bando" class="map col-md-8 col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.375720845213!2d106.67178731444253!3d20.856900999000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a6065be8ecb%3A0x213f45542315c88f!2zMTFBIEvDvSBDb24sIFBoYW4gQuG7mWkgQ2jDonUsIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1476694000719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.375720845213!2d106.67178731444253!3d20.856900999000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a6065be8ecb%3A0x213f45542315c88f!2zMTFBIEvDvSBDb24sIFBoYW4gQuG7mWkgQ2jDonUsIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1476694000719" @*width="100%" height="100%"*@ frameborder="0" style="border:0; width:90%;" allowfullscreen></iframe>
             </div>
             <!--Thông tin công ty và liên hệ-->
             <div id="lienhe" class="info col-md-4 col-lg-4">
                 <p>Liên hệ với chúng tôi</p>
                 <ul>
-                    <li><img src="~/Content/Front/Image/header-footer/address-icon.png" alt="" /><span>Địa chỉ :</span> 11A Ký Con - Hồng Bàng - Hải Phòng</li>
-                    <li><img src="~/Content/Front/Image/header-footer/phone-icon.png" alt="" /><span>ĐT :</span> 0912.393.279</li>
-                    <li><img src="~/Content/Front/Image/header-footer/mail-icon.png" alt="" /><span>Mail :</span> Vudinhlong79@gmail.com</li>
+                    <li><img src="~/Content/Front/Image/header-footer/address-icon.png" alt="" /><span>Địa chỉ :</span> {{infoCompany.diaChi}}</li>
+                    <li><img src="~/Content/Front/Image/header-footer/phone-icon.png" alt="" /><span>ĐT :</span> <a href="tel:{{infoCompany.sdt}}" style="color:#fff;">{{infoCompany.sdt}}</a></li>
+                    <li><img src="~/Content/Front/Image/header-footer/phone-icon.png" alt="" /><span>ĐT :</span> <a href="tel:{{infoCompany.sdtBan}}" style="color:#fff;">{{infoCompany.sdtBan}}</a></li>
+                    <li><img src="~/Content/Front/Image/header-footer/phone-icon.png" alt="" /><span>ĐT :</span> <a href="tel:{{infoCompany.sdtDD}}" style="color:#fff;">{{infoCompany.sdtDD}}</a></li>
+                    <li><img src="~/Content/Front/Image/header-footer/mail-icon.png" alt="" /><span>Mail :</span> <a href="mailto:{{infoCompany.mail}}" style="color:#fff;">{{infoCompany.mail}}</a></li>
                 </ul>
                 <div ng-controller="ContactController">
                     <div class="col-md-6 col-lg-6">
@@ -236,10 +238,13 @@
     <script src="~/Scripts/loading-spinner/angular-loading-spinner.js"></script>
 
     <!--Banner-->
-    <script src="~/Scripts/Front/bannerController.min.js"></script>
+    @*<script src="~/Scripts/Front/bannerController.min.js"></script>*@
 
     <!--Video-->
-    <script src="~/Scripts/Front/videoController.min.js"></script>
+    @*<script src="~/Scripts/Front/videoController.min.js"></script>*@
+
+    <!--InfoCompany-->
+    <script src="~/Scripts/front/infoCompanyController.min.js"></script>
 
     <!--Category Post-->
     <script src="~/Scripts/Front/categoryPostFactory.min.js"></script>

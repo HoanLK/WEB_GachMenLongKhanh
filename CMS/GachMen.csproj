@@ -206,6 +206,8 @@
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Admin\Controllers\ImageAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\ImagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\infoCompanyAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\infoCompanyController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrderAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsAPIController.cs" />
@@ -285,6 +287,9 @@
       <DependentUpon>GachMen.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Image.cs">
+      <DependentUpon>GachMen.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\infoCompany.cs">
       <DependentUpon>GachMen.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Order.cs">
@@ -2314,6 +2319,7 @@
     <Content Include="Content\Front\Image\loaisanpham\ico-twitter.png" />
     <Content Include="Content\Front\Image\loaisanpham\ico-youtube.png" />
     <Content Include="Content\Front\Image\header-footer\logo.png" />
+    <Content Include="Content\Front\Image\new-icon.png" />
     <Content Include="Content\Front\Image\sanpham\banner-bg.png" />
     <Content Include="Content\Front\Image\sanpham\gachmen-1.png" />
     <Content Include="Content\Front\Image\sanpham\gachmen-2.png" />
@@ -2382,8 +2388,16 @@
     <Content Include="Content\Images\images\GachMenCaoCap\gachmen-4.png" />
     <Content Include="Content\Images\images\GachMenCaoCap\product-gachmen.png" />
     <Content Include="Content\Images\images\GachMenCaoCap\_____________________7019830_orig.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\bao ve gach men mua nom\bao ve khoi nam moc.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\bao ve gach men\gach men.jpg" />
     <Content Include="Content\Images\images\GocTuVan\gach men cho van phong\van phong%281%29.jpg" />
     <Content Include="Content\Images\images\GocTuVan\gach men cho van phong\van phong.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh moc\bep menh moc.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh moc\menh moc.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh moc\phong kgac menh mong.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh moc\phong ngu cho nguoi menh moc.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh moc\phong tam ch nguoi menh moc.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\gach op lat cho nguoi menh tho\menh tho.jpg" />
     <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 2.jpg" />
     <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 3.jpg" />
     <Content Include="Content\Images\images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 4.jpg" />
@@ -2397,6 +2411,8 @@
     <Content Include="Content\Images\images\GocTuVan\phong thuy cho nguoi menh hoa\menh moc.jpg" />
     <Content Include="Content\Images\images\GocTuVan\phong thuy cho nguoi menh hoa\menh moc1.jpg" />
     <Content Include="Content\Images\images\GocTuVan\San nha theo phong thuy\gach-lat-nen-phong-khach 1.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\tu van gach cho nguoi menh thuy\menh hoa 1.jpg" />
+    <Content Include="Content\Images\images\GocTuVan\tu van gach cho nguoi menh thuy\menh thuy.jpg" />
     <Content Include="Content\Images\images\GocTuVan\tuvan.png" />
     <Content Include="Content\Images\images\KhachHang DoiTac\doitac-1.png" />
     <Content Include="Content\Images\images\KhachHang DoiTac\doitac-2.png" />
@@ -2436,8 +2452,58 @@
     <Content Include="Content\Images\images\ThietBiVeSinh\vesinh-2.png" />
     <Content Include="Content\Images\images\Tranh3D\tranh3d-1.png" />
     <Content Include="Content\Images\images\Tranh3D\tranh3d-2.png" />
+    <Content Include="Content\Images\images\Tranh3D\z708392476067_e8b4b78849d341d8a9e0e04f18368702.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392477210_23e1166cb99fd8b8a44f26418cea3495.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392477219_1722536e24d029361a7f33c1bc7b4b1a.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392478700_3742486a1422f057b51a6f495b582926.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392478773_71fcbaa38717f39fd7c79aa9bb06834f.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392478976_6a61c52ae5fde3b5310d15670731e4c9.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392479048_0a9efbce7b7b6744c66530bb037b635e.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392479230_d717b6f5a0a27671b9704c4928d6b69d.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392479289_d79d1be91f99f3ebcf97a188cef1cbba.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392479895_bfdfde3a0e30a0016610d15cfc6dd219.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392479967_b9580a7bc0200e80f382ec36b591dd09.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392480316_2738d3dd4f03f73308c60a56945c45f0.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392480326_6cfcd82b330c8954c9b14c95b82fa949.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392480389_f08e26329d971be34478fa1852796eb5.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392480411_c1676438535f028ab833299465f72e2d.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392480660_cebcc0946a87ff55ce5980a9c1fa6626.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392481703_54c89ff09e1296a6ff464fc1fbd7d063.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392481771_29acede74631f258ed0b871f2dd52b37.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392481924_e8e3f204531ed47244a4678025e41503.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392481982_1b90d123c00322c34986cb2c91e80b37.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392482153_92536d0d5e522eeff27893b793e271c8.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392482223_8133f8676f11c658e4361a936e18152a.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392482540_c7233dc5cc5831f81d8ed5c3ea5e2d36.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392482750_08f9cd9afd9fca5779db47ac0cc9d03c.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392483169_80223e8474bbe5a2c4b4baa952d372c2.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392483393_bd600cd9d35d97b75b36c2f6ffc06d14.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392483625_6d0c84678baa998bea70be265ba22e51.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392483828_c56fb04f99d9420824584da5b6540da6.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484032_c5647bcad40902b984906b994d909c59.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484600_2ccd3111d8965d6b318b68a6c8d91946.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484602_e905506af8afcfb41d803f3321d1d3cc.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484753_4d69225f09859858d4926412fc54a6b1.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484980_b7f81608815bd7a83c8b032e9d7247ff.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484996_200512a82c54e267e0dde7ae9ae4fbc6.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484997_b41fe9064cb497cc781e58aaea12ae3c.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392484999_a7d8119ca98d6e5126f3abb4b4a7fff9.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392485001_3e925c1fd7fb6657c49e39920a546de4.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392486059_986a7b2dc0b30eba93a042937c290359.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392656854_54c89ff09e1296a6ff464fc1fbd7d063.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392657108_23e1166cb99fd8b8a44f26418cea3495.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392657138_bd600cd9d35d97b75b36c2f6ffc06d14.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392657578_92536d0d5e522eeff27893b793e271c8.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392659306_e8b4b78849d341d8a9e0e04f18368702.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392661625_d717b6f5a0a27671b9704c4928d6b69d.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392661626_1722536e24d029361a7f33c1bc7b4b1a.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392661628_6cfcd82b330c8954c9b14c95b82fa949.jpg" />
+    <Content Include="Content\Images\images\Tranh3D\z708392661629_e8e3f204531ed47244a4678025e41503.jpg" />
     <Content Include="Content\Images\_thumbs\Files\avatar.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Banner\Banner-min.png" />
+    <Content Include="Content\Images\_thumbs\Images\BoSuuTap\bosuutap-2.png" />
+    <Content Include="Content\Images\_thumbs\Images\BoSuuTap\bosuutap-3.png" />
+    <Content Include="Content\Images\_thumbs\Images\BoSuuTap\bosuutap-4.png" />
     <Content Include="Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-1.png" />
     <Content Include="Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-2.png" />
     <Content Include="Content\Images\_thumbs\Images\CongTrinhTieuBieu\contrinhtieubieu-3.png" />
@@ -2450,8 +2516,16 @@
     <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\gachmen-4.png" />
     <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\product-gachmen.png" />
     <Content Include="Content\Images\_thumbs\Images\GachMenCaoCap\_____________________7019830_orig.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\bao ve gach men mua nom\bao ve khoi nam moc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\bao ve gach men\gach men.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach men cho van phong\van phong%281%29.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach men cho van phong\van phong.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh moc\bep menh moc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh moc\menh moc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh moc\phong kgac menh mong.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh moc\phong ngu cho nguoi menh moc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh moc\phong tam ch nguoi menh moc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\gach op lat cho nguoi menh tho\menh tho.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 2.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 3.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\Giai phong khong gian nha tam\khong gian phong tam 4.jpg" />
@@ -2465,7 +2539,12 @@
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\phong thuy cho nguoi menh hoa\menh moc.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\phong thuy cho nguoi menh hoa\menh moc1.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\San nha theo phong thuy\gach-lat-nen-phong-khach 1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\tu van gach cho nguoi menh thuy\menh hoa 1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\GocTuVan\tu van gach cho nguoi menh thuy\menh thuy.jpg" />
     <Content Include="Content\Images\_thumbs\Images\GocTuVan\tuvan.png" />
+    <Content Include="Content\Images\_thumbs\Images\KhachHang DoiTac\doitac-1.png" />
+    <Content Include="Content\Images\_thumbs\Images\KhachHang DoiTac\doitac-2.png" />
+    <Content Include="Content\Images\_thumbs\Images\KhachHang DoiTac\doitac-3.png" />
     <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phong ngu\gach phong ngu.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian nha tam.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Khong gian dep\Gach lat nen phu hop cho khong gian dep\khong gian phong khach.jpg" />
@@ -2499,6 +2578,8 @@
     <Content Include="Content\Images\_thumbs\Images\ThietBiNhaTam\IMG_1991-min.jpg" />
     <Content Include="Content\Images\_thumbs\Images\ThietBiNhaTam\IMG_1994-min.jpg" />
     <Content Include="Content\Images\_thumbs\Images\ThietBiNhaTam\IMG_1997-min.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\ThietBiNhaTam\nhatam-1.png" />
+    <Content Include="Content\Images\_thumbs\Images\ThietBiNhaTam\nhatam-2.png" />
     <Content Include="Content\Images\_thumbs\Images\ThietBiVeSinh\23.jpg" />
     <Content Include="Content\Images\_thumbs\Images\ThietBiVeSinh\vesinh-1.png" />
     <Content Include="Content\Images\_thumbs\Images\ThietBiVeSinh\vesinh-2.png" />
@@ -2507,6 +2588,48 @@
     <Content Include="Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc3-min.png" />
     <Content Include="Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc4-min.png" />
     <Content Include="Content\Images\_thumbs\Images\Tin khoa hoc\TinTuc5-min.png" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\tranh3d-1.png" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\tranh3d-2.png" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392476067_e8b4b78849d341d8a9e0e04f18368702.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392477210_23e1166cb99fd8b8a44f26418cea3495.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392477219_1722536e24d029361a7f33c1bc7b4b1a.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392478700_3742486a1422f057b51a6f495b582926.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392478773_71fcbaa38717f39fd7c79aa9bb06834f.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392478976_6a61c52ae5fde3b5310d15670731e4c9.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392479048_0a9efbce7b7b6744c66530bb037b635e.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392479230_d717b6f5a0a27671b9704c4928d6b69d.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392479289_d79d1be91f99f3ebcf97a188cef1cbba.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392479895_bfdfde3a0e30a0016610d15cfc6dd219.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392479967_b9580a7bc0200e80f382ec36b591dd09.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392480316_2738d3dd4f03f73308c60a56945c45f0.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392480326_6cfcd82b330c8954c9b14c95b82fa949.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392480389_f08e26329d971be34478fa1852796eb5.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392480411_c1676438535f028ab833299465f72e2d.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392480660_cebcc0946a87ff55ce5980a9c1fa6626.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392481703_54c89ff09e1296a6ff464fc1fbd7d063.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392481771_29acede74631f258ed0b871f2dd52b37.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392481924_e8e3f204531ed47244a4678025e41503.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392481982_1b90d123c00322c34986cb2c91e80b37.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392482153_92536d0d5e522eeff27893b793e271c8.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392482223_8133f8676f11c658e4361a936e18152a.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392482540_c7233dc5cc5831f81d8ed5c3ea5e2d36.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392482750_08f9cd9afd9fca5779db47ac0cc9d03c.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392483169_80223e8474bbe5a2c4b4baa952d372c2.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392483393_bd600cd9d35d97b75b36c2f6ffc06d14.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392483625_6d0c84678baa998bea70be265ba22e51.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392483828_c56fb04f99d9420824584da5b6540da6.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484032_c5647bcad40902b984906b994d909c59.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484600_2ccd3111d8965d6b318b68a6c8d91946.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484602_e905506af8afcfb41d803f3321d1d3cc.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484753_4d69225f09859858d4926412fc54a6b1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484980_b7f81608815bd7a83c8b032e9d7247ff.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484996_200512a82c54e267e0dde7ae9ae4fbc6.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484997_b41fe9064cb497cc781e58aaea12ae3c.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392484999_a7d8119ca98d6e5126f3abb4b4a7fff9.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392485001_3e925c1fd7fb6657c49e39920a546de4.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392486059_986a7b2dc0b30eba93a042937c290359.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392656854_54c89ff09e1296a6ff464fc1fbd7d063.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Tranh3D\z708392657108_23e1166cb99fd8b8a44f26418cea3495.jpg" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
     <Content Include="Content\ui-grid.svg" />
@@ -2575,6 +2698,10 @@
     </Content>
     <Content Include="Scripts\admin\postFactory.min.js">
       <DependentUpon>postFactory.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\suaInfoCompanyController.js" />
+    <Content Include="Scripts\admin\suaInfoCompanyController.min.js">
+      <DependentUpon>suaInfoCompanyController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\themBannerController.min.js">
       <DependentUpon>themBannerController.js</DependentUpon>
@@ -2689,6 +2816,10 @@
     <Content Include="Scripts\front\imageController.js" />
     <Content Include="Scripts\front\imageController.min.js">
       <DependentUpon>imageController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\front\infoCompanyController.js" />
+    <Content Include="Scripts\front\infoCompanyController.min.js">
+      <DependentUpon>infoCompanyController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\jquery.dlmenu.js" />
     <Content Include="Scripts\front\jquery.dlmenu.min.js">
@@ -3064,6 +3195,8 @@
     <Content Include="bower_components\angular\README.md" />
     <Content Include="Areas\Admin\Views\Images\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Images\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\infoCompany\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\infoCompany\Index.cshtml" />
     <None Include="bundleconfig.json" />
     <EntityDeploy Include="Models\GachMen.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
