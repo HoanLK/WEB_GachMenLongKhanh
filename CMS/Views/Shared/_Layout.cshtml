@@ -52,8 +52,11 @@
         }
     </style>
     <script src="~/Scripts/front/modernizr.custom.js"></script>
+    <!--Popup tết-->
+    <link href="~/Content/Front/Popup/popup.min.css" rel="stylesheet" />
 </head>
 <body ng-app="frontApp">
+    @Html.Partial("_PopTet")
     <header>
         <!--Giao diện menu trên máy tính-->
         <div class="desktop hidden-xs hidden-sm">
@@ -197,11 +200,7 @@
     <!--jquery-->
     @*<script src="~/Scripts/jquery-3.1.1.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>*@
-    @*<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>*@
-    @*<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>*@
-    <script src="https://code.jquery.com/jquery-1.12.4.js"
-            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @*<script src="~/Scripts/modernizr-2.8.3.js"></script>*@
@@ -212,6 +211,18 @@
     @*<script src="~/Scripts/angular-sanitize.min.js"></script>*@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.js"></script>
     <script src="~/Scripts/angular-cookies.min.js"></script>
+
+    <!--Popup tết-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="~/Content/Front/Popup/jquery.popup.min.js"></script>
+    <script type="text/javascript">
+			$(window).load(function() {
+			  $('#myModal').popup($('#myModal').data());
+			});
+    </script>	
+
+
+
 
     <!--Message-->
     <script src="~/Content/admin/js/libs/toastr/toastr.min.js"></script>
